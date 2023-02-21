@@ -1,0 +1,10 @@
+@import "../utils/functions/unit-converter";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: unit-converter(183, px, rem);
+}

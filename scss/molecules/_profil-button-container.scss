@@ -1,0 +1,19 @@
+.profil-button-container {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__user-greeting {
+    width: max-content;
+    text-align: end;
+    color: $light-color;
+    opacity: 100%;
+    margin-right: unit-converter(10, px, rem);
+
+    span {
+      opacity: 70%;
+    }
+  }
+}

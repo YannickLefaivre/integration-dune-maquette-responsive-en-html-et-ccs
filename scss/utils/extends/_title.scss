@@ -1,0 +1,9 @@
+@import "../variables/colors";
+
+/* ### Header tag common style */
+
+%title {
+  color: $dark-color;
+  font-weight: 600; /* semi-bold font-weight */
+  font-style: normal;
+}

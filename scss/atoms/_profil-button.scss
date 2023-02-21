@@ -1,0 +1,48 @@
+@import "../utils/variables/colors";
+@import "../utils/functions/unit-converter";
+@import "../utils/extends/button-state";
+
+
+.profil-button {
+  position: relative;
+  width: max-content;
+  height: max-content;
+  padding: 0px;
+  background-color: transparent;
+  border: 0px none transparent;
+  border-radius: unit-converter(3, px, rem);
+
+  &:hover {
+    @extend %button-interactive-state-outline;
+    cursor: pointer;
+  }
+
+  &:focus {
+    @extend %button-interactive-state-outline;
+  }
+
+  &:focus-visible {
+    @extend %button-interactive-state-outline;
+  }
+
+  .button:active {
+    color: $light-color;
+  }
+
+  &__connected-indicator {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: unit-converter(12, px, rem);
+    height: unit-converter(12, px, rem);
+    background-color: red;
+  }
+
+  &__user-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

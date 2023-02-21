@@ -1,0 +1,13 @@
+@import "../variables/colors";
+
+/* ### Link element common focus state style */
+
+%link-interactive-state-color {
+  opacity: 100%;
+}
+
+%link-interactive-state-outline {
+  outline: 0.0625rem solid $dark-color;
+  outline-offset: 0.1875rem;
+  border-radius: 0.1875rem;
+}

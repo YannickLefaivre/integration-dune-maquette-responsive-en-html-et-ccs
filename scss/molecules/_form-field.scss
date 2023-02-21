@@ -1,0 +1,20 @@
+@import "../utils/functions/unit-converter";
+
+.form-field {
+  width: 21%;
+  padding: unit-converter(16, px, rem) unit-converter(20, px, rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: unit-converter(16, px, rem);
+
+  &__icon {
+    color: $primary-color;
+  }
+
+  &__label-and-input-part {
+    display: flex;
+    flex-direction: column;
+  }
+}

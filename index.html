@@ -6,42 +6,63 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Home | 2rism</title>
   </head>
   <body>
     <!-- Navbar + Hero -->
-    <div>
+    <div class="main-screen">
       <!-- Navbar -->
-      <nav>
+      <nav class="navbar">
         <a href="index.html">
           <img src="./icons/logos/2rism-logo.svg" alt="Tourisme" />
         </a>
 
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Hotels</a></li>
-          <li><a href="#">Restaurants</a></li>
-          <li><a href="#">Tours</a></li>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Activities</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="navbar-links-list">
+          <li class="navbar-links-list__item">
+            <a class="navbar-link" href="#">Home</a>
+          </li>
+          <li class="navbar-links-list__item">
+            <a class="navbar-link" href="#">Hotels</a>
+          </li>
+          <li class="navbar-links-list__item">
+            <a class="navbar-link" href="#">Restaurants</a>
+          </li>
+          <li class="navbar-links-list__item">
+            <a class="navbar-link" href="#">Tours</a>
+          </li>
+          <li class="navbar-links-list__item">
+            <a class="navbar-link" href="#">Destinations</a>
+          </li>
+          <li class="navbar-links-list__item">
+            <a class="navbar-link" href="#">Activities</a>
+          </li>
+          <li class="navbar-links-list__item">
+            <a class="navbar-link" href="#">Contact</a>
+          </li>
         </ul>
 
-        <button>
-          <span>Holla, Ales Nesestril</span>
-          <img
-            src="./images/users/ales-nesetril.jpg"
-            alt="Portrait d'Ales Nesestril"
-          />
-        </button>
+        <div class="profil-button-container">
+          <p class="profil-button-container__user-greeting">
+            <span>Holla</span><br />
+            Ales Nesestril
+          </p>
+          <button class="profil-button">
+            <span class="profil-button__connected-indicator"></span>
+            <img
+              class="profil-button__user-picture"
+              src="./images/users/ales-nesetril.jpg"
+              alt="Portrait d'Ales Nesestril"
+            />
+          </button>
+        </div>
       </nav>
 
-      <!-- Hero / Header -->
-      <header>
+      <!-- Hero -->
+      <section class="hero">
         <h1>Discover the most engaging places</h1>
 
-        <button>
+        <button class="button button--cta button--lg">
           <!-- business/global-line icon -->
           <svg
             width="24"
@@ -58,10 +79,16 @@
           Discover on 3D Globe
         </button>
 
-        <form id="search-form" action="#" method="get">
-          <div>
+        <form
+          class="search-form"
+          id="search-form"
+          action="#"
+          method="get"
+        >
+          <div class="form-field">
             <!-- map / map-pin-line -->
             <svg
+              class="form-field__icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -74,16 +101,22 @@
               />
             </svg>
 
-            <div>
+            <div class="form-field__label-and-input-part">
               <label for="location">Location</label>
-              <span>Explore nearby destinations</span>
-              <input type="text" name="location" id="location" />
+              <input
+                class="form-control"
+                type="text"
+                name="location"
+                id="location"
+                value="Explore nearby destinations"
+              />
             </div>
           </div>
 
-          <div>
+          <div class="form-field">
             <!-- map / riding-line -->
             <svg
+              class="form-field__icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -96,17 +129,18 @@
               />
             </svg>
 
-            <div>
+            <div class="form-field__label-and-input-part dropdown-container">
               <label for="activity">Activity</label>
               <div>
                 <input
+                class="form-control"
                   type="text"
                   name="activity"
                   id="activity"
                   value="All Activities"
                 />
 
-                <ul>
+                <ul class="dropdown-content">
                   <li>All Activities</li>
                   <!-- List of all activities sort by user search -->
                 </ul>
@@ -114,9 +148,10 @@
             </div>
           </div>
 
-          <div>
+          <div class="form-field">
             <!-- business/calendar-event-fill -->
             <svg
+              class="form-field__icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -129,18 +164,19 @@
               />
             </svg>
 
-            <div>
+            <div class="form-field__label-and-input-part">
               <label for="date">When</label>
               <div>
                 <strong>Choose a Date</strong>
-                <input type="date" name="date" id="date" />
+                <input class="form-control" type="date" name="date" id="date" hidden />
               </div>
             </div>
           </div>
 
-          <div>
+          <div class="form-field">
             <!-- user / group-line -->
             <svg
+              class="form-field__icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -153,7 +189,7 @@
               />
             </svg>
 
-            <div>
+            <div class="form-field__label-and-input-part dropdown-container">
               <label for="guest">Guests</label>
               <div>
                 <div>
@@ -161,33 +197,33 @@
                     <option value="1-guest">1 Guest</option>
                     <!-- More guests options -->
                   </select>
-                  <button type="button">1 Guest</button>
+                  <button class="form-control" type="button">1 Guest</button>
                 </div>
 
-                <ul>
+                <ul class="dropdown-content">
                   <li>1 Guest</li>
                   <!-- More guests options -->
                 </ul>
               </div>
             </div>
-
-            <button type="submit">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2941 14.5699 18.0029 12.8204 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18C12.8204 18.0029 14.5699 17.2941 15.875 16.025L16.025 15.875V15.875Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </button>
           </div>
+
+          <button class="button button--md" type="submit">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2941 14.5699 18.0029 12.8204 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18C12.8204 18.0029 14.5699 17.2941 15.875 16.025L16.025 15.875V15.875Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
         </form>
-      </header>
+      </section>
     </div>
 
     <main>
@@ -196,20 +232,20 @@
         <h2>Popular Destinations</h2>
 
         <div>
-          <a>
+          <a href="#">
             <img
               src="./images/popular-destinations/big-sur.jpg"
               alt=""
             />
 
-            <h3>Big Sur</h3></a
-          >
+            <h3>Big Sur</h3>
+          </a>
 
           <p>California, USA</p>
         </div>
 
         <div>
-          <a>
+          <a href="#">
             <img
               src="./images/popular-destinations/fort-mayers.jpg"
               alt=""
@@ -221,7 +257,7 @@
         </div>
 
         <div>
-          <a>
+          <a href="#">
             <img
               src="./images/popular-destinations/prescott.jpg"
               alt=""
@@ -234,7 +270,7 @@
         </div>
 
         <div>
-          <a>
+          <a href="#">
             <img
               src="./images/popular-destinations/tucson.jpg"
               alt=""
@@ -247,7 +283,7 @@
         </div>
 
         <div>
-          <a>
+          <a href="#">
             <img
               src="./images/popular-destinations/st-joseph.jpg"
               alt=""
@@ -260,7 +296,7 @@
         </div>
 
         <div>
-          <a>
+          <a href="#">
             <img
               src="./images/popular-destinations/madrid.jpg"
               alt=""
@@ -298,7 +334,7 @@
 
         <ul>
           <li>
-            <a>
+            <a href="#">
               <img
                 src="./images/hotels-and-restaurants/monastero-santa-rosa-hotel-et-spa.jpg"
                 alt=""
@@ -411,7 +447,7 @@
           </li>
 
           <li>
-            <a>
+            <a href="#">
               <img
                 src="./images/hotels-and-restaurants/grand-hotel-tremezzo.jpg"
                 alt=""
@@ -524,7 +560,7 @@
           </li>
 
           <li>
-            <a>
+            <a href="#">
               <img
                 src="./images/hotels-and-restaurants/the-oberoi-udaivilas_udaipur.jpg"
                 alt=""
@@ -637,7 +673,7 @@
           </li>
 
           <li>
-            <a>
+            <a href="#">
               <img
                 src="./images/hotels-and-restaurants/aka-beverly-hills.jpg"
                 alt=""
@@ -937,7 +973,7 @@
 
         <ul>
           <li>
-            <a>
+            <a href="#">
               <img src="./images/activities/sailing.jpg" alt="" />
 
               <h3>Sailing</h3>
@@ -945,7 +981,7 @@
           </li>
 
           <li>
-            <a>
+            <a href="#">
               <img src="./images/activities/climbing.jpg" alt="" />
 
               <h3>Climbing</h3>
@@ -953,7 +989,7 @@
           </li>
 
           <li>
-            <a>
+            <a href="#">
               <img src="./images/activities/skiing.jpg" alt="" />
 
               <h3>Skiing</h3>
@@ -961,7 +997,7 @@
           </li>
 
           <li>
-            <a>
+            <a href="#">
               <img src="./images/activities/hiking.jpg" alt="" />
 
               <h3>Hiking</h3>

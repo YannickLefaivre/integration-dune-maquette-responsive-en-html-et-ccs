@@ -1,0 +1,33 @@
+@import "../utils/functions/unit-converter";
+
+.button {
+  display: flex;
+  align-items: center;
+  column-gap: unit-converter(8, px, rem);
+  padding: unit-converter(24, px, rem);
+  font-weight: 600;
+  color: $light-color;
+  background-color: $secondary-color;
+  border-radius: unit-converter(12, px, rem);
+
+  &:hover {
+    @extend %button-interactive-state-outline;
+    cursor: pointer;
+  }
+
+  &:focus {
+    @extend %button-interactive-state-outline;
+  }
+
+  &:focus-visible {
+    @extend %button-interactive-state-outline;
+  }
+
+  &:active {
+    color: $light-color;
+  }
+
+  &--cta {
+    margin-bottom: unit-converter(184, px, rem);
+  }
+}

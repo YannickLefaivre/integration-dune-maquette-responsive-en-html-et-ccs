@@ -1,0 +1,12 @@
+@import "../utils/functions/unit-converter";
+
+.search-form {    
+  width: 80%;
+  padding: unit-converter(8, px, rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $light-color;
+  border-radius: unit-converter(12, px, rem);
+}

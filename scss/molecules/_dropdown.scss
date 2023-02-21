@@ -1,0 +1,16 @@
+.dropdown-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+
+  &--open {
+    display: block;
+  }
+}

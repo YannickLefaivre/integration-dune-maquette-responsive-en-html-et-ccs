@@ -1,0 +1,26 @@
+/* ### unit-converter */
+
+/// Convert a value $from a unit $to an another unit
+/// 
+/// @param {number} $value
+/// @param {unit} $from
+/// @param {unit} $to
+/// 
+/// @return {length} - The value converted into $to unit.
+@function unit-converter($value, $from, $to) {
+  $converted-value: 0;
+
+  @if($from == "px" and $to == "rem") {
+    $converted-value: calc($value / 16) + $to;
+
+    @return $converted-value;
+  }
+
+  @if($from == "rem" and $to == "px"){
+    $converted-value: calc($value * 16) + $to;
+
+    @return $converted-value;
+  }
+
+  @error "Not supported conversion has been used. Unit passed to the function : " + "$from = " + $from + " $to = " + $to;
+}

@@ -1,0 +1,27 @@
+/* ### h+N tag */
+
+@import "../utils/variables/colors";
+@import "../utils/functions/unit-converter";
+
+h1 {
+  @extend %title;
+
+  margin-bottom: 1rem;
+  font-size: $font-size-xxl;
+  color: $light-color;
+  margin-bottom: unit-converter(32, px, rem);
+}
+
+h2 {
+  @extend %title;
+
+  font-size: $font-size-xl;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  @extend %title;
+  
+  font-size: $font-size-sm;
+  margin-bottom: 0.5rem;
+}

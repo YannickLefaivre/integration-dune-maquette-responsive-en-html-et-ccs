@@ -1,0 +1,32 @@
+@import "../utils/variables/colors";
+@import "../utils/extends/link-interactive-state";
+
+/* ## Link tag */
+
+a {
+  display: inline-block;
+  color: $dark-color;
+  text-decoration: none;
+  opacity: 70%;
+
+  &:hover {
+    @extend %link-interactive-state-color;
+  }
+
+  &:visited {
+    color: scale-color($dark-color, $lightness: 80%);
+  }
+
+  &:focus {
+    @extend %link-interactive-state-color;
+    @extend %link-interactive-state-outline;
+  }
+
+  &:focus-visible {
+    @extend %link-interactive-state-outline;
+  }
+
+  &:active {
+    @extend %link-interactive-state-color;
+  }
+}
