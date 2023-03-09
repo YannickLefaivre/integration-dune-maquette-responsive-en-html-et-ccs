@@ -1,5 +1,3 @@
-@import "../utils/functions/unit-converter";
-
 .form-field {
   width: 21%;
   padding: unit-converter(16, px, rem) unit-converter(20, px, rem);
@@ -16,5 +14,22 @@
   &__label-and-input-part {
     display: flex;
     flex-direction: column;
+
+    &--newsletter-subcription-form {
+      width: 100%;
+    }
+  }
+
+  &--newsletter-subcription-form {
+    width: 100%;
+  }
+
+  @media (max-width: 629px) {  
+    width: 100%;
+    padding: 1rem 0.3rem;
+
+    &__label {
+      font-size: $font-size-xs;
+    }
   }
 }

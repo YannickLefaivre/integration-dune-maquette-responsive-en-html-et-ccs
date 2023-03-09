@@ -2,6 +2,20 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
+  &--navlink {
+    gap: 182px;
+    flex-direction: row;
+  }
+
+  &--menu-open {
+    position: static;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    gap: unit-converter(32, px, rem);
+  }
 }
 
 .dropdown-content {
@@ -10,7 +24,11 @@
   left: 0px;
   display: none;
 
-  &--open {
+  &--menu-open {
+    position: static;
     display: block;
+    gap: unit-converter(18, px, rem);
+    display: flex;
+    margin-block: 0px;
   }
 }

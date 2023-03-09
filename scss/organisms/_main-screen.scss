@@ -1,12 +1,27 @@
 @use "../utils/functions/unit-converter";
 
 .main-screen {
+  display: flex;
+  flex-direction: column;
   width: auto;
-  height: 53vh;
+  height: unit-converter(800, px, rem);
+  margin-bottom: unit-converter(120, px, rem);
   padding-inline: 20%;
   padding-top: unit-converter(31, px, rem);
   background-image: url("../images/hero/earth-space-view.jpg");
   background-size: cover;
   background-position: center;
-  border-radius: 0rem 0rem unit-converter(54, px, rem) unit-converter(54, px, rem);
+  border-radius: 0rem 0rem unit-converter(54, px, rem)
+    unit-converter(54, px, rem);
+
+  &--dropdown-menu-open {
+    height: 100vh;
+    margin-bottom: 0px;
+    border-radius: 0px;
+  }
+
+  @media (max-width: 629px) {
+    height: auto;
+    padding: 5% 5% 20%;
+  }
 }

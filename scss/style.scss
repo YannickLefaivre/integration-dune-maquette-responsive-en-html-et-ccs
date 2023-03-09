@@ -1,57 +1,83 @@
-/* # Utils */
+/* Normalization */
 
-/* ## Variables */
+@import "./templates/normalize";
 
-@import './utils/variables/fonts';
-@import './utils/variables/colors';
+// # Utils
 
-/* ## Functions */
+// ## Variables
 
-@import './utils/functions/unit-converter';
+@import "./utils/variables/fonts";
+@import "./utils/variables/colors";
+@import "./utils/variables/spacing";
+@import "./utils/variables/sizes";
 
-/* ## Extends */
+// ## Functions
 
-@import './utils/extends/title';
-@import './utils/extends/button-state';
-@import './utils/extends/link-interactive-state';
+@import "./utils/functions/unit-converter";
 
+// ## Extends
+
+/* Shared style */
+
+@import "./utils/extends/section";
+@import "./utils/extends/title";
+@import "./utils/extends/button-state";
+@import "./utils/extends/link-interactive-state";
+@import "./utils/extends/location-indicator";
+@import "./utils/extends/post-footage-metadata";
 
 /* # Templates */
 
 /* ## At-rules */
 
-@import './templates/font-face';
+@import "./templates/font-face";
 
 /* ## Element selector */
 
-@import './templates/body';
-@import './templates/titles';
-@import './templates/paragraph';
-@import './templates/unordoned-list';
-@import './templates/list-item';
-@import './templates/image';
-@import './templates/link';
+@import "./templates/body";
+@import "./templates/titles";
+@import "./templates/paragraph";
+@import "./templates/unordoned-list";
+@import "./templates/list-item";
+@import "./templates/image";
+@import "./templates/link";
 
 
 /* # Organisms */
 
-@import './organisms/main-screen';
+@import "./organisms/main-screen";
 @import "./organisms/navbar";
 @import "./organisms/hero";
 @import "./organisms/search-form";
+@import "./organisms/main";
+@import "./organisms/popular-destinations";
+@import "./organisms/hotels-and-restaurants";
+@import "./organisms/travel-tips-and-advice";
+@import "./organisms/activities";
+@import "./organisms/about-us";
+@import "./organisms/footer";
 
 
 /* # Molecules */
 
 @import "./molecules/navbar-links-list";
-@import "./molecules/profil-button-container";
 @import "./molecules/form-field";
 @import "./molecules/dropdown";
-
+@import "./molecules/popular-destinations-list";
+@import "./molecules/popular-destination-card";
+@import "./molecules/hotels-and-restaurants-list";
+@import "./molecules/hotels-and-restaurants-card";
+@import "./molecules/travel-tips-and-advice-post-container";
+@import "./molecules/travel-tips-and-advice-post-list";
+@import "./molecules/travel-tips-and-advice-post";
+@import "./molecules/profil-button-container";
+@import "./molecules/activities-card-list";
+@import "./molecules/activities-card";
 
 /* # Atoms */
 
-@import "./atoms/navbar-link";
+@import "./atoms/from-control";
+@import "./atoms/navbar__link";
 @import "./atoms/button";
-@import './atoms/from-control';
 @import "./atoms/profil-button";
+@import "./atoms/dropdown-trigger";

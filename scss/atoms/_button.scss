@@ -1,6 +1,6 @@
-@import "../utils/functions/unit-converter";
-
 .button {
+  width: max-content;
+  height: min-content;
   display: flex;
   align-items: center;
   column-gap: unit-converter(8, px, rem);
@@ -8,6 +8,7 @@
   font-weight: 600;
   color: $light-color;
   background-color: $secondary-color;
+  border: 0px none transparent;
   border-radius: unit-converter(12, px, rem);
 
   &:hover {
@@ -29,5 +30,53 @@
 
   &--cta {
     margin-bottom: unit-converter(184, px, rem);
+  }
+
+  &--sx {
+    padding: unit-converter(10, px, rem);
+  }
+
+  &--secondary {
+    font-weight: normal;
+    color: $secondary-color;
+    background-color: scale-color(
+      $color: $light-color,
+      $lightness: -10%
+    );
+    opacity: 100%;
+  }
+
+  &--link:visited {
+    color: scale-color($secondary-color, $lightness: 10%);
+  }
+
+  &--newsletter-subcription-form {
+    width: unit-converter(72, px, rem);
+    height: unit-converter(72, px, rem);
+    margin-bottom: 0px;
+  }
+
+  @media (max-width: 629px) {
+    &--cta {
+      margin-bottom: 4rem;
+      padding: unit-converter(20, px, rem);
+      font-size: $font-size-xs;
+    }
+
+    &--md {
+      width: unit-converter(112, px, rem);
+      height: unit-converter(48, px, rem);
+      margin-inline: auto;
+      justify-content: center;
+    }
+
+    &--link {
+      font-size: $font-size-xs;
+    }
+
+    &__icon {
+      width: unit-converter(20, px, rem);
+      height: unit-converter(20, px, rem);
+    }
   }
 }

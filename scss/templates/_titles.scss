@@ -7,16 +7,25 @@ h1 {
   @extend %title;
 
   margin-bottom: 1rem;
+  text-align: center;
   font-size: $font-size-xxl;
   color: $light-color;
   margin-bottom: unit-converter(32, px, rem);
+
+  @media (max-width: 629px) {
+    font-size: $font-size-xl;
+  }
 }
 
 h2 {
   @extend %title;
 
   font-size: $font-size-xl;
-  margin-bottom: 2rem;
+  margin-bottom: unit-converter(64, px, rem);
+
+  @media (max-width: 629px) {
+    font-size: $font-size-l;
+  }
 }
 
 h3 {

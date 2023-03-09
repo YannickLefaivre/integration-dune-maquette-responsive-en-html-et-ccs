@@ -9,52 +9,105 @@
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Home | 2rism</title>
   </head>
-  <body>
+  <body class="body">
     <!-- Navbar + Hero -->
     <div class="main-screen">
       <!-- Navbar -->
       <nav class="navbar">
         <a href="index.html">
-          <img src="./icons/logos/2rism-logo.svg" alt="Tourisme" />
+          <svg
+            class="navbar__company-logo"
+            width="88"
+            height="36"
+            viewBox="0 0 88 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.048 24.228C0.592 23.796 0.84 23.596 0.792 23.628C2.36 22.332 3.592 21.268 4.488 20.436C5.4 19.604 6.168 18.732 6.792 17.82C7.416 16.908 7.728 16.02 7.728 15.156C7.728 14.5 7.576 13.988 7.272 13.62C6.968 13.252 6.512 13.068 5.904 13.068C5.296 13.068 4.816 13.3 4.464 13.764C4.128 14.212 3.96 14.852 3.96 15.684H0C0.032 14.324 0.32 13.188 0.864 12.276C1.424 11.364 2.152 10.692 3.048 10.26C3.96 9.828 4.968 9.612 6.072 9.612C7.976 9.612 9.408 10.1 10.368 11.076C11.344 12.052 11.832 13.324 11.832 14.892C11.832 16.604 11.248 18.196 10.08 19.668C8.912 21.124 7.424 22.548 5.616 23.94H12.096V27.276H0.048V24.228Z"
+              fill="currentColor"
+            />
+            <path
+              d="M18.4149 16.356C18.8949 15.62 19.4949 15.044 20.2149 14.628C20.9349 14.196 21.7349 13.98 22.6149 13.98V18.324H21.4869C20.4629 18.324 19.6949 18.548 19.1829 18.996C18.6709 19.428 18.4149 20.196 18.4149 21.3V27.516H14.3109V14.124H18.4149V16.356Z"
+              fill="currentColor"
+            />
+            <path
+              d="M26.6406 12.732C25.9206 12.732 25.3286 12.524 24.8646 12.108C24.4166 11.676 24.1926 11.148 24.1926 10.524C24.1926 9.884 24.4166 9.356 24.8646 8.94C25.3286 8.508 25.9206 8.292 26.6406 8.292C27.3446 8.292 27.9206 8.508 28.3686 8.94C28.8326 9.356 29.0646 9.884 29.0646 10.524C29.0646 11.148 28.8326 11.676 28.3686 12.108C27.9206 12.524 27.3446 12.732 26.6406 12.732ZM28.6806 14.124V27.516H24.5766V14.124H28.6806Z"
+              fill="currentColor"
+            />
+            <path
+              d="M37.1027 27.708C35.9347 27.708 34.8947 27.508 33.9827 27.108C33.0707 26.708 32.3507 26.164 31.8227 25.476C31.2947 24.772 30.9987 23.988 30.9347 23.124H34.9907C35.0387 23.588 35.2547 23.964 35.6387 24.252C36.0227 24.54 36.4947 24.684 37.0547 24.684C37.5667 24.684 37.9587 24.588 38.2307 24.396C38.5187 24.188 38.6627 23.924 38.6627 23.604C38.6627 23.22 38.4627 22.94 38.0627 22.764C37.6627 22.572 37.0147 22.364 36.1187 22.14C35.1587 21.916 34.3587 21.684 33.7187 21.444C33.0787 21.188 32.5267 20.796 32.0627 20.268C31.5987 19.724 31.3667 18.996 31.3667 18.084C31.3667 17.316 31.5747 16.62 31.9907 15.996C32.4227 15.356 33.0467 14.852 33.8627 14.484C34.6947 14.116 35.6787 13.932 36.8147 13.932C38.4947 13.932 39.8147 14.348 40.7747 15.18C41.7507 16.012 42.3107 17.116 42.4547 18.492H38.6627C38.5987 18.028 38.3907 17.66 38.0387 17.388C37.7027 17.116 37.2547 16.98 36.6947 16.98C36.2147 16.98 35.8467 17.076 35.5907 17.268C35.3347 17.444 35.2067 17.692 35.2067 18.012C35.2067 18.396 35.4067 18.684 35.8067 18.876C36.2227 19.068 36.8627 19.26 37.7267 19.452C38.7187 19.708 39.5267 19.964 40.1507 20.22C40.7747 20.46 41.3187 20.86 41.7827 21.42C42.2627 21.964 42.5107 22.7 42.5267 23.628C42.5267 24.412 42.3027 25.116 41.8547 25.74C41.4227 26.348 40.7907 26.828 39.9587 27.18C39.1427 27.532 38.1907 27.708 37.1027 27.708Z"
+              fill="currentColor"
+            />
+            <path
+              d="M62.1255 13.98C63.7895 13.98 65.1095 14.484 66.0855 15.492C67.0775 16.5 67.5735 17.9 67.5735 19.692V27.516H63.4935V20.244C63.4935 19.38 63.2615 18.716 62.7975 18.252C62.3495 17.772 61.7255 17.532 60.9255 17.532C60.1255 17.532 59.4935 17.772 59.0295 18.252C58.5815 18.716 58.3575 19.38 58.3575 20.244V27.516H54.2775V20.244C54.2775 19.38 54.0455 18.716 53.5815 18.252C53.1335 17.772 52.5095 17.532 51.7095 17.532C50.9095 17.532 50.2775 17.772 49.8135 18.252C49.3655 18.716 49.1415 19.38 49.1415 20.244V27.516H45.0375V14.124H49.1415V15.804C49.5575 15.244 50.1015 14.804 50.7735 14.484C51.4455 14.148 52.2055 13.98 53.0535 13.98C54.0615 13.98 54.9575 14.196 55.7415 14.628C56.5415 15.06 57.1655 15.676 57.6135 16.476C58.0775 15.74 58.7095 15.14 59.5095 14.676C60.3095 14.212 61.1815 13.98 62.1255 13.98Z"
+              fill="currentColor"
+            />
+            <g clip-path="url(#clip0_556_631)">
+              <path
+                d="M72.8708 6.502C72.5228 6.386 72.5195 6.19867 72.8775 6.07933L85.6022 1.838C85.9548 1.72067 86.1568 1.918 86.0582 2.26333L82.4222 14.9873C82.3222 15.34 82.1188 15.352 81.9695 15.0173L79.5735 9.62533L83.5735 4.292L78.2402 8.292L72.8708 6.502V6.502Z"
+                fill="#5243C2"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_556_631">
+                <rect
+                  width="16"
+                  height="16"
+                  fill="white"
+                  transform="translate(71.5735 0.292)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
         </a>
 
-        <ul class="navbar-links-list">
-          <li class="navbar-links-list__item">
-            <a class="navbar-link" href="#">Home</a>
-          </li>
-          <li class="navbar-links-list__item">
-            <a class="navbar-link" href="#">Hotels</a>
-          </li>
-          <li class="navbar-links-list__item">
-            <a class="navbar-link" href="#">Restaurants</a>
-          </li>
-          <li class="navbar-links-list__item">
-            <a class="navbar-link" href="#">Tours</a>
-          </li>
-          <li class="navbar-links-list__item">
-            <a class="navbar-link" href="#">Destinations</a>
-          </li>
-          <li class="navbar-links-list__item">
-            <a class="navbar-link" href="#">Activities</a>
-          </li>
-          <li class="navbar-links-list__item">
-            <a class="navbar-link" href="#">Contact</a>
-          </li>
-        </ul>
-
-        <div class="profil-button-container">
-          <p class="profil-button-container__user-greeting">
-            <span>Holla</span><br />
-            Ales Nesestril
-          </p>
-          <button class="profil-button">
-            <span class="profil-button__connected-indicator"></span>
-            <img
-              class="profil-button__user-picture"
-              src="./images/users/ales-nesetril.jpg"
-              alt="Portrait d'Ales Nesestril"
-            />
+        <div class="dropdown-container dropdown-container--navlink">
+          <button class="button button--sx dropdown-trigger">
+            <span class="dropdown-trigger__bar"></span>
+            <span class="dropdown-trigger__bar"></span>
+            <span class="dropdown-trigger__bar"></span>
           </button>
+
+          <ul class="navbar-links-list">
+            <li class="navbar-links-list__item">
+              <a class="navbar__link" href="#">Home</a>
+            </li>
+            <li class="navbar-links-list__item">
+              <a class="navbar__link" href="#">Hotels</a>
+            </li>
+            <li class="navbar-links-list__item">
+              <a class="navbar__link" href="#">Restaurants</a>
+            </li>
+            <li class="navbar-links-list__item">
+              <a class="navbar__link" href="#">Tours</a>
+            </li>
+            <li class="navbar-links-list__item">
+              <a class="navbar__link" href="#">Destinations</a>
+            </li>
+            <li class="navbar-links-list__item">
+              <a class="navbar__link" href="#">Activities</a>
+            </li>
+            <li class="navbar-links-list__item">
+              <a class="navbar__link" href="#">Contact</a>
+            </li>
+            <li class="profil-button-container">
+              <p class="profil-button-container__user-greeting">
+                <span>Holla</span><br />
+                Ales Nesestril
+              </p>
+              <button class="profil-button">
+                <span
+                  class="profil-button__connected-indicator"
+                ></span>
+                <img
+                  class="profil-button__user-picture"
+                  src="./images/users/ales-nesetril.jpg"
+                  alt="Portrait d'Ales Nesestril"
+                />
+              </button>
+            </li>
+          </ul>
         </div>
       </nav>
 
@@ -65,6 +118,7 @@
         <button class="button button--cta button--lg">
           <!-- business/global-line icon -->
           <svg
+            class="button__icon"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -102,7 +156,9 @@
             </svg>
 
             <div class="form-field__label-and-input-part">
-              <label for="location">Location</label>
+              <label class="form-field__label" for="location"
+                >Location</label
+              >
               <input
                 class="form-control"
                 type="text"
@@ -129,11 +185,15 @@
               />
             </svg>
 
-            <div class="form-field__label-and-input-part dropdown-container">
-              <label for="activity">Activity</label>
+            <div
+              class="form-field__label-and-input-part dropdown-container"
+            >
+              <label class="form-field__label" for="activity"
+                >Activity</label
+              >
               <div>
                 <input
-                class="form-control"
+                  class="form-control"
                   type="text"
                   name="activity"
                   id="activity"
@@ -165,11 +225,14 @@
             </svg>
 
             <div class="form-field__label-and-input-part">
-              <label for="date">When</label>
-              <div>
-                <strong>Choose a Date</strong>
-                <input class="form-control" type="date" name="date" id="date" hidden />
-              </div>
+              <label class="form-field__label" for="date">When</label>
+              <input
+                class="form-control"
+                type="text"
+                name="date"
+                id="date"
+                value="Choose a Date"
+              />
             </div>
           </div>
 
@@ -189,15 +252,21 @@
               />
             </svg>
 
-            <div class="form-field__label-and-input-part dropdown-container">
-              <label for="guest">Guests</label>
+            <div
+              class="form-field__label-and-input-part dropdown-container"
+            >
+              <label class="form-field__label" for="guest"
+                >Guests</label
+              >
               <div>
                 <div>
                   <select name="guest" id="guest" hidden>
                     <option value="1-guest">1 Guest</option>
                     <!-- More guests options -->
                   </select>
-                  <button class="form-control" type="button">1 Guest</button>
+                  <button class="form-control" type="button">
+                    1 Guest
+                  </button>
                 </div>
 
                 <ul class="dropdown-content">
@@ -226,98 +295,137 @@
       </section>
     </div>
 
-    <main>
+    <main class="main">
       <!-- Popular Destinations -->
-      <section>
-        <h2>Popular Destinations</h2>
+      <section class="popular-destinations">
+        <h2 class="popular-destinations__title">
+          Popular Destinations
+        </h2>
 
-        <div>
-          <a href="#">
-            <img
-              src="./images/popular-destinations/big-sur.jpg"
-              alt=""
-            />
+        <div
+          class="popular-destinations-list popular-destinations-list__card-list"
+        >
+          <div class="popular-destination-card">
+            <a href="#">
+              <img
+                src="./images/popular-destinations/big-sur.jpg"
+                alt=""
+              />
+            </a>
 
-            <h3>Big Sur</h3>
-          </a>
+            <div>
+              <h3 class="popular-destination-card__title">Big Sur</h3>
 
-          <p>California, USA</p>
-        </div>
+              <p class="popular-destination-card__subtitle">
+                California, USA
+              </p>
+            </div>
+          </div>
 
-        <div>
-          <a href="#">
-            <img
-              src="./images/popular-destinations/fort-mayers.jpg"
-              alt=""
-            />
-            <h3>Fort Mayers</h3>
-          </a>
+          <div class="popular-destination-card">
+            <a href="#">
+              <img
+                src="./images/popular-destinations/fort-mayers.jpg"
+                alt=""
+              />
+            </a>
 
-          <p>Florida, USA</p>
-        </div>
+            <div>
+              <h3 class="popular-destination-card__title">
+                Fort Mayers
+              </h3>
 
-        <div>
-          <a href="#">
-            <img
-              src="./images/popular-destinations/prescott.jpg"
-              alt=""
-            />
+              <p class="popular-destination-card__subtitle">
+                Florida, USA
+              </p>
+            </div>
+          </div>
 
-            <h3>Prescott</h3>
-          </a>
+          <div class="popular-destination-card">
+            <a href="#">
+              <img
+                src="./images/popular-destinations/prescott.jpg"
+                alt=""
+              />
+            </a>
 
-          <p>Arizona, USA</p>
-        </div>
+            <div>
+              <h3 class="popular-destination-card__title">
+                Prescott
+              </h3>
 
-        <div>
-          <a href="#">
-            <img
-              src="./images/popular-destinations/tucson.jpg"
-              alt=""
-            />
+              <p class="popular-destination-card__subtitle">
+                Arizona, USA
+              </p>
+            </div>
+          </div>
 
-            <h3>Tucson</h3>
-          </a>
+          <div class="popular-destination-card">
+            <a href="#">
+              <img
+                src="./images/popular-destinations/tucson.jpg"
+                alt=""
+              />
+            </a>
 
-          <p>Arizona, USA</p>
-        </div>
+            <div>
+              <h3 class="popular-destination-card__title">Tucson</h3>
 
-        <div>
-          <a href="#">
-            <img
-              src="./images/popular-destinations/st-joseph.jpg"
-              alt=""
-            />
+              <p class="popular-destination-card__subtitle">
+                Arizona, USA
+              </p>
+            </div>
+          </div>
 
-            <h3>St. Joseph</h3>
-          </a>
+          <div class="popular-destination-card">
+            <a href="#">
+              <img
+                src="./images/popular-destinations/st-joseph.jpg"
+                alt=""
+              />
+            </a>
 
-          <p>Michigan, USA</p>
-        </div>
+            <div>
+              <h3 class="popular-destination-card__title">
+                St. Joseph
+              </h3>
+              <p class="popular-destination-card__subtitle">
+                Michigan, USA
+              </p>
+            </div>
+          </div>
 
-        <div>
-          <a href="#">
-            <img
-              src="./images/popular-destinations/madrid.jpg"
-              alt=""
-            />
+          <div class="popular-destination-card">
+            <a href="#">
+              <img
+                src="./images/popular-destinations/madrid.jpg"
+                alt=""
+              />
+            </a>
 
-            <h3>Madrid</h3>
-          </a>
-
-          <p>Spain</p>
+            <div>
+              <h3 class="popular-destination-card__title">Madrid</h3>
+              <p class="popular-destination-card__subtitle">Spain</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Hotels and Restaurants -->
-      <section>
+      <section class="hotels-and-restaurants">
         <!-- Section Title -->
-        <div>
-          <h2>Hotels and Restaurants</h2>
+        <div class="hotels-and-restaurants__heading">
+          <h2 class="hotels-and-restaurants__title">
+            Hotels and Restaurants
+          </h2>
 
-          <a href="#">
+          <a
+            class="button button--secondary button--sx button--link"
+            href="#"
+          >
             View all
             <svg
+              class="button__icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -332,470 +440,546 @@
           </a>
         </div>
 
-        <ul>
-          <li>
-            <a href="#">
+        <ul
+          class="hotels-and-restaurants-list hotels-and-restaurants-list__card-list"
+        >
+          <li class="hotels-and-restaurants-card">
+            <a class="hotels-and-restaurants-card__link" href="#">
               <img
+                class="hotels-and-restaurants-card__picture"
                 src="./images/hotels-and-restaurants/monastero-santa-rosa-hotel-et-spa.jpg"
                 alt=""
               />
-
-              <h3>Monastero Santa Rosa Hotel & Spa</h3>
             </a>
 
             <div>
-              <div>
-                <!-- map/map-pin-line icon -->
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              <h3 class="hotels-and-restaurants-card__title">
+                Monastero Santa Rosa Hotel & Spa
+              </h3>
+
+              <div
+                class="hotels-and-restaurants-card__location-and-rating"
+              >
+                <div
+                  class="hotels-and-restaurants-card__location-and-map-icon"
                 >
-                  <path
-                    d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7238 18.8656 12.3659C19.1356 11.0081 18.9969 9.60064 18.4671 8.3216C17.9373 7.04256 17.04 5.94935 15.8889 5.18021C14.7378 4.41107 13.3844 4.00055 12 4.00055C10.6156 4.00055 9.26222 4.41107 8.11109 5.18021C6.95996 5.94935 6.06275 7.04256 5.53292 8.3216C5.00308 9.60064 4.86442 11.0081 5.13445 12.3659C5.40449 13.7238 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1054 3.52019 14.5017 3.17293 12.7559C2.82567 11.0101 3.00391 9.20047 3.6851 7.55595C4.36629 5.91142 5.51984 4.50582 6.99988 3.51689C8.47992 2.52796 10.22 2.00012 12 2.00012C13.78 2.00012 15.5201 2.52796 17.0001 3.51689C18.4802 4.50582 19.6337 5.91142 20.3149 7.55595C20.9961 9.20047 21.1743 11.0101 20.8271 12.7559C20.4798 14.5017 19.6227 16.1054 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4143C13.7893 12.0392 14 11.5305 14 11C14 10.4696 13.7893 9.9609 13.4142 9.58583C13.0391 9.21076 12.5304 9.00004 12 9.00004C11.4696 9.00004 10.9609 9.21076 10.5858 9.58583C10.2107 9.9609 10 10.4696 10 11C10 11.5305 10.2107 12.0392 10.5858 12.4143C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8285C8.42143 13.0783 8 12.0609 8 11C8 9.93918 8.42143 8.92176 9.17158 8.17162C9.92172 7.42147 10.9391 7.00004 12 7.00004C13.0609 7.00004 14.0783 7.42147 14.8284 8.17162C15.5786 8.92176 16 9.93918 16 11C16 12.0609 15.5786 13.0783 14.8284 13.8285C14.0783 14.5786 13.0609 15 12 15Z"
-                    fill="currentColor"
-                  />
-                </svg>
+                  <!-- map/map-pin-line icon -->
+                  <svg
+                    class="hotels-and-restaurants-card__map-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7238 18.8656 12.3659C19.1356 11.0081 18.9969 9.60064 18.4671 8.3216C17.9373 7.04256 17.04 5.94935 15.8889 5.18021C14.7378 4.41107 13.3844 4.00055 12 4.00055C10.6156 4.00055 9.26222 4.41107 8.11109 5.18021C6.95996 5.94935 6.06275 7.04256 5.53292 8.3216C5.00308 9.60064 4.86442 11.0081 5.13445 12.3659C5.40449 13.7238 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1054 3.52019 14.5017 3.17293 12.7559C2.82567 11.0101 3.00391 9.20047 3.6851 7.55595C4.36629 5.91142 5.51984 4.50582 6.99988 3.51689C8.47992 2.52796 10.22 2.00012 12 2.00012C13.78 2.00012 15.5201 2.52796 17.0001 3.51689C18.4802 4.50582 19.6337 5.91142 20.3149 7.55595C20.9961 9.20047 21.1743 11.0101 20.8271 12.7559C20.4798 14.5017 19.6227 16.1054 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4143C13.7893 12.0392 14 11.5305 14 11C14 10.4696 13.7893 9.9609 13.4142 9.58583C13.0391 9.21076 12.5304 9.00004 12 9.00004C11.4696 9.00004 10.9609 9.21076 10.5858 9.58583C10.2107 9.9609 10 10.4696 10 11C10 11.5305 10.2107 12.0392 10.5858 12.4143C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8285C8.42143 13.0783 8 12.0609 8 11C8 9.93918 8.42143 8.92176 9.17158 8.17162C9.92172 7.42147 10.9391 7.00004 12 7.00004C13.0609 7.00004 14.0783 7.42147 14.8284 8.17162C15.5786 8.92176 16 9.93918 16 11C16 12.0609 15.5786 13.0783 14.8284 13.8285C14.0783 14.5786 13.0609 15 12 15Z"
+                      fill="currentColor"
+                    />
+                  </svg>
 
-                <p>Salerno, Italy</p>
+                  <p class="hotels-and-restaurants-card__location">
+                    Salerno, Italy
+                  </p>
+                </div>
+
+                <ul class="hotels-and-restaurants-card__rating">
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                </ul>
               </div>
-
-              <ul>
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-              </ul>
             </div>
           </li>
 
-          <li>
-            <a href="#">
+          <li class="hotels-and-restaurants-card">
+            <a class="hotels-and-restaurants-card__link" href="#">
               <img
+                class="hotels-and-restaurants-card__picture"
                 src="./images/hotels-and-restaurants/grand-hotel-tremezzo.jpg"
                 alt=""
               />
-
-              <h3>Grand Hotel Tremezzo</h3>
             </a>
 
             <div>
-              <div>
-                <!-- map/map-pin-line icon -->
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              <h3 class="hotels-and-restaurants-card__title">
+                Grand Hotel Tremezzo
+              </h3>
+
+              <div
+                class="hotels-and-restaurants-card__location-and-rating"
+              >
+                <div
+                  class="hotels-and-restaurants-card__location-and-map-icon"
                 >
-                  <path
-                    d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7238 18.8656 12.3659C19.1356 11.0081 18.9969 9.60064 18.4671 8.3216C17.9373 7.04256 17.04 5.94935 15.8889 5.18021C14.7378 4.41107 13.3844 4.00055 12 4.00055C10.6156 4.00055 9.26222 4.41107 8.11109 5.18021C6.95996 5.94935 6.06275 7.04256 5.53292 8.3216C5.00308 9.60064 4.86442 11.0081 5.13445 12.3659C5.40449 13.7238 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1054 3.52019 14.5017 3.17293 12.7559C2.82567 11.0101 3.00391 9.20047 3.6851 7.55595C4.36629 5.91142 5.51984 4.50582 6.99988 3.51689C8.47992 2.52796 10.22 2.00012 12 2.00012C13.78 2.00012 15.5201 2.52796 17.0001 3.51689C18.4802 4.50582 19.6337 5.91142 20.3149 7.55595C20.9961 9.20047 21.1743 11.0101 20.8271 12.7559C20.4798 14.5017 19.6227 16.1054 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4143C13.7893 12.0392 14 11.5305 14 11C14 10.4696 13.7893 9.9609 13.4142 9.58583C13.0391 9.21076 12.5304 9.00004 12 9.00004C11.4696 9.00004 10.9609 9.21076 10.5858 9.58583C10.2107 9.9609 10 10.4696 10 11C10 11.5305 10.2107 12.0392 10.5858 12.4143C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8285C8.42143 13.0783 8 12.0609 8 11C8 9.93918 8.42143 8.92176 9.17158 8.17162C9.92172 7.42147 10.9391 7.00004 12 7.00004C13.0609 7.00004 14.0783 7.42147 14.8284 8.17162C15.5786 8.92176 16 9.93918 16 11C16 12.0609 15.5786 13.0783 14.8284 13.8285C14.0783 14.5786 13.0609 15 12 15Z"
-                    fill="currentColor"
-                  />
-                </svg>
+                  <!-- map/map-pin-line icon -->
+                  <svg
+                    class="hotels-and-restaurants-card__map-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7238 18.8656 12.3659C19.1356 11.0081 18.9969 9.60064 18.4671 8.3216C17.9373 7.04256 17.04 5.94935 15.8889 5.18021C14.7378 4.41107 13.3844 4.00055 12 4.00055C10.6156 4.00055 9.26222 4.41107 8.11109 5.18021C6.95996 5.94935 6.06275 7.04256 5.53292 8.3216C5.00308 9.60064 4.86442 11.0081 5.13445 12.3659C5.40449 13.7238 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1054 3.52019 14.5017 3.17293 12.7559C2.82567 11.0101 3.00391 9.20047 3.6851 7.55595C4.36629 5.91142 5.51984 4.50582 6.99988 3.51689C8.47992 2.52796 10.22 2.00012 12 2.00012C13.78 2.00012 15.5201 2.52796 17.0001 3.51689C18.4802 4.50582 19.6337 5.91142 20.3149 7.55595C20.9961 9.20047 21.1743 11.0101 20.8271 12.7559C20.4798 14.5017 19.6227 16.1054 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4143C13.7893 12.0392 14 11.5305 14 11C14 10.4696 13.7893 9.9609 13.4142 9.58583C13.0391 9.21076 12.5304 9.00004 12 9.00004C11.4696 9.00004 10.9609 9.21076 10.5858 9.58583C10.2107 9.9609 10 10.4696 10 11C10 11.5305 10.2107 12.0392 10.5858 12.4143C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8285C8.42143 13.0783 8 12.0609 8 11C8 9.93918 8.42143 8.92176 9.17158 8.17162C9.92172 7.42147 10.9391 7.00004 12 7.00004C13.0609 7.00004 14.0783 7.42147 14.8284 8.17162C15.5786 8.92176 16 9.93918 16 11C16 12.0609 15.5786 13.0783 14.8284 13.8285C14.0783 14.5786 13.0609 15 12 15Z"
+                      fill="currentColor"
+                    />
+                  </svg>
 
-                <p>Lake Como, Italy</p>
+                  <p class="hotels-and-restaurants-card__location">
+                    Lake Como, Italy
+                  </p>
+                </div>
+
+                <ul class="hotels-and-restaurants-card__rating">
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-line icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968V15.968Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-line icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968V15.968Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                </ul>
               </div>
-
-              <ul>
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-line icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968V15.968Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-line icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968V15.968Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-              </ul>
             </div>
           </li>
 
-          <li>
-            <a href="#">
+          <li class="hotels-and-restaurants-card">
+            <a class="hotels-and-restaurants-card__link" href="#">
               <img
+                class="hotels-and-restaurants-card__picture"
                 src="./images/hotels-and-restaurants/the-oberoi-udaivilas_udaipur.jpg"
                 alt=""
               />
-
-              <h3>The Oberoi Udaivilas, Udaipur</h3>
             </a>
 
             <div>
-              <div>
-                <!-- map/map-pin-line icon -->
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              <h3 class="hotels-and-restaurants-card__title">
+                The Oberoi Udaivilas, Udaipur
+              </h3>
+
+              <div
+                class="hotels-and-restaurants-card__location-and-rating"
+              >
+                <div
+                  class="hotels-and-restaurants-card__location-and-map-icon"
                 >
-                  <path
-                    d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7238 18.8656 12.3659C19.1356 11.0081 18.9969 9.60064 18.4671 8.3216C17.9373 7.04256 17.04 5.94935 15.8889 5.18021C14.7378 4.41107 13.3844 4.00055 12 4.00055C10.6156 4.00055 9.26222 4.41107 8.11109 5.18021C6.95996 5.94935 6.06275 7.04256 5.53292 8.3216C5.00308 9.60064 4.86442 11.0081 5.13445 12.3659C5.40449 13.7238 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1054 3.52019 14.5017 3.17293 12.7559C2.82567 11.0101 3.00391 9.20047 3.6851 7.55595C4.36629 5.91142 5.51984 4.50582 6.99988 3.51689C8.47992 2.52796 10.22 2.00012 12 2.00012C13.78 2.00012 15.5201 2.52796 17.0001 3.51689C18.4802 4.50582 19.6337 5.91142 20.3149 7.55595C20.9961 9.20047 21.1743 11.0101 20.8271 12.7559C20.4798 14.5017 19.6227 16.1054 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4143C13.7893 12.0392 14 11.5305 14 11C14 10.4696 13.7893 9.9609 13.4142 9.58583C13.0391 9.21076 12.5304 9.00004 12 9.00004C11.4696 9.00004 10.9609 9.21076 10.5858 9.58583C10.2107 9.9609 10 10.4696 10 11C10 11.5305 10.2107 12.0392 10.5858 12.4143C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8285C8.42143 13.0783 8 12.0609 8 11C8 9.93918 8.42143 8.92176 9.17158 8.17162C9.92172 7.42147 10.9391 7.00004 12 7.00004C13.0609 7.00004 14.0783 7.42147 14.8284 8.17162C15.5786 8.92176 16 9.93918 16 11C16 12.0609 15.5786 13.0783 14.8284 13.8285C14.0783 14.5786 13.0609 15 12 15Z"
-                    fill="currentColor"
-                  />
-                </svg>
+                  <!-- map/map-pin-line icon -->
+                  <svg
+                    class="hotels-and-restaurants-card__map-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7238 18.8656 12.3659C19.1356 11.0081 18.9969 9.60064 18.4671 8.3216C17.9373 7.04256 17.04 5.94935 15.8889 5.18021C14.7378 4.41107 13.3844 4.00055 12 4.00055C10.6156 4.00055 9.26222 4.41107 8.11109 5.18021C6.95996 5.94935 6.06275 7.04256 5.53292 8.3216C5.00308 9.60064 4.86442 11.0081 5.13445 12.3659C5.40449 13.7238 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1054 3.52019 14.5017 3.17293 12.7559C2.82567 11.0101 3.00391 9.20047 3.6851 7.55595C4.36629 5.91142 5.51984 4.50582 6.99988 3.51689C8.47992 2.52796 10.22 2.00012 12 2.00012C13.78 2.00012 15.5201 2.52796 17.0001 3.51689C18.4802 4.50582 19.6337 5.91142 20.3149 7.55595C20.9961 9.20047 21.1743 11.0101 20.8271 12.7559C20.4798 14.5017 19.6227 16.1054 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4143C13.7893 12.0392 14 11.5305 14 11C14 10.4696 13.7893 9.9609 13.4142 9.58583C13.0391 9.21076 12.5304 9.00004 12 9.00004C11.4696 9.00004 10.9609 9.21076 10.5858 9.58583C10.2107 9.9609 10 10.4696 10 11C10 11.5305 10.2107 12.0392 10.5858 12.4143C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8285C8.42143 13.0783 8 12.0609 8 11C8 9.93918 8.42143 8.92176 9.17158 8.17162C9.92172 7.42147 10.9391 7.00004 12 7.00004C13.0609 7.00004 14.0783 7.42147 14.8284 8.17162C15.5786 8.92176 16 9.93918 16 11C16 12.0609 15.5786 13.0783 14.8284 13.8285C14.0783 14.5786 13.0609 15 12 15Z"
+                      fill="currentColor"
+                    />
+                  </svg>
 
-                <p>Udaipur, India</p>
+                  <p class="hotels-and-restaurants-card__location">
+                    Udaipur, India
+                  </p>
+                </div>
+
+                <ul class="hotels-and-restaurants-card__rating">
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-line icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968V15.968Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                </ul>
               </div>
-
-              <ul>
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-line icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968V15.968Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-              </ul>
             </div>
           </li>
 
-          <li>
-            <a href="#">
+          <li class="hotels-and-restaurants-card">
+            <a class="hotels-and-restaurants-card__link" href="#">
               <img
+                class="hotels-and-restaurants-card__picture"
                 src="./images/hotels-and-restaurants/aka-beverly-hills.jpg"
                 alt=""
               />
-
-              <h3>AKA Beverly Hills</h3>
             </a>
 
             <div>
-              <div>
-                <!-- map/map-pin-line icon -->
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              <h3 class="hotels-and-restaurants-card__title">
+                AKA Beverly Hills
+              </h3>
+
+              <div
+                class="hotels-and-restaurants-card__location-and-rating"
+              >
+                <div
+                  class="hotels-and-restaurants-card__location-and-map-icon"
                 >
-                  <path
-                    d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7238 18.8656 12.3659C19.1356 11.0081 18.9969 9.60064 18.4671 8.3216C17.9373 7.04256 17.04 5.94935 15.8889 5.18021C14.7378 4.41107 13.3844 4.00055 12 4.00055C10.6156 4.00055 9.26222 4.41107 8.11109 5.18021C6.95996 5.94935 6.06275 7.04256 5.53292 8.3216C5.00308 9.60064 4.86442 11.0081 5.13445 12.3659C5.40449 13.7238 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1054 3.52019 14.5017 3.17293 12.7559C2.82567 11.0101 3.00391 9.20047 3.6851 7.55595C4.36629 5.91142 5.51984 4.50582 6.99988 3.51689C8.47992 2.52796 10.22 2.00012 12 2.00012C13.78 2.00012 15.5201 2.52796 17.0001 3.51689C18.4802 4.50582 19.6337 5.91142 20.3149 7.55595C20.9961 9.20047 21.1743 11.0101 20.8271 12.7559C20.4798 14.5017 19.6227 16.1054 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4143C13.7893 12.0392 14 11.5305 14 11C14 10.4696 13.7893 9.9609 13.4142 9.58583C13.0391 9.21076 12.5304 9.00004 12 9.00004C11.4696 9.00004 10.9609 9.21076 10.5858 9.58583C10.2107 9.9609 10 10.4696 10 11C10 11.5305 10.2107 12.0392 10.5858 12.4143C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8285C8.42143 13.0783 8 12.0609 8 11C8 9.93918 8.42143 8.92176 9.17158 8.17162C9.92172 7.42147 10.9391 7.00004 12 7.00004C13.0609 7.00004 14.0783 7.42147 14.8284 8.17162C15.5786 8.92176 16 9.93918 16 11C16 12.0609 15.5786 13.0783 14.8284 13.8285C14.0783 14.5786 13.0609 15 12 15Z"
-                    fill="currentColor"
-                  />
-                </svg>
+                  <!-- map/map-pin-line icon -->
+                  <svg
+                    class="hotels-and-restaurants-card__map-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 20.9L16.95 15.95C17.9289 14.971 18.5955 13.7238 18.8656 12.3659C19.1356 11.0081 18.9969 9.60064 18.4671 8.3216C17.9373 7.04256 17.04 5.94935 15.8889 5.18021C14.7378 4.41107 13.3844 4.00055 12 4.00055C10.6156 4.00055 9.26222 4.41107 8.11109 5.18021C6.95996 5.94935 6.06275 7.04256 5.53292 8.3216C5.00308 9.60064 4.86442 11.0081 5.13445 12.3659C5.40449 13.7238 6.07111 14.971 7.05 15.95L12 20.9ZM12 23.728L5.636 17.364C4.37734 16.1054 3.52019 14.5017 3.17293 12.7559C2.82567 11.0101 3.00391 9.20047 3.6851 7.55595C4.36629 5.91142 5.51984 4.50582 6.99988 3.51689C8.47992 2.52796 10.22 2.00012 12 2.00012C13.78 2.00012 15.5201 2.52796 17.0001 3.51689C18.4802 4.50582 19.6337 5.91142 20.3149 7.55595C20.9961 9.20047 21.1743 11.0101 20.8271 12.7559C20.4798 14.5017 19.6227 16.1054 18.364 17.364L12 23.728V23.728ZM12 13C12.5304 13 13.0391 12.7893 13.4142 12.4143C13.7893 12.0392 14 11.5305 14 11C14 10.4696 13.7893 9.9609 13.4142 9.58583C13.0391 9.21076 12.5304 9.00004 12 9.00004C11.4696 9.00004 10.9609 9.21076 10.5858 9.58583C10.2107 9.9609 10 10.4696 10 11C10 11.5305 10.2107 12.0392 10.5858 12.4143C10.9609 12.7893 11.4696 13 12 13ZM12 15C10.9391 15 9.92172 14.5786 9.17158 13.8285C8.42143 13.0783 8 12.0609 8 11C8 9.93918 8.42143 8.92176 9.17158 8.17162C9.92172 7.42147 10.9391 7.00004 12 7.00004C13.0609 7.00004 14.0783 7.42147 14.8284 8.17162C15.5786 8.92176 16 9.93918 16 11C16 12.0609 15.5786 13.0783 14.8284 13.8285C14.0783 14.5786 13.0609 15 12 15Z"
+                      fill="currentColor"
+                    />
+                  </svg>
 
-                <p>Los Angeles, United States</p>
+                  <p class="hotels-and-restaurants-card__location">
+                    Los Angeles, United States
+                  </p>
+                </div>
+
+                <ul class="hotels-and-restaurants-card__rating">
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-fill icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-line icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968V15.968Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+
+                  <li>
+                    <!-- system/star-line icon -->
+                    <svg
+                      class="hotels-and-restaurants-card__rating-star"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968V15.968Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                </ul>
               </div>
-
-              <ul>
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-fill icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-line icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968V15.968Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-
-                <li>
-                  <!-- system/star-line icon -->
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 18.26L4.94698 22.208L6.52198 14.28L0.586975 8.792L8.61398 7.84L12 0.5L15.386 7.84L23.413 8.792L17.478 14.28L19.053 22.208L12 18.26ZM12 15.968L16.247 18.345L15.298 13.572L18.871 10.267L14.038 9.694L12 5.275L9.96198 9.695L5.12898 10.267L8.70197 13.572L7.75297 18.345L12 15.968V15.968Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </li>
-              </ul>
             </div>
           </li>
         </ul>
       </section>
 
       <!-- Travel Tips and Advice -->
-      <section>
+      <section class="travel-tips-and-advice">
         <!-- Section Title -->
-        <div>
-          <h2>Travel Tips and Advice</h2>
+        <div class="travel-tips-and-advice__heading">
+          <h2 class="travel-tips-and-advice__title">
+            Travel Tips and Advice
+          </h2>
 
-          <a href="#">
+          <a
+            class="button button--secondary button--sx button--link"
+            href="#"
+          >
             View all
             <svg
+              class="button__icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -810,153 +994,239 @@
           </a>
         </div>
 
-        <ul>
-          <li>
-            <article>
-              <header>
-                <h3><a href="#">East Village Ice Cream Crawl</a></h3>
+        <ul
+          class="travel-tips-and-advice-post-list travel-tips-and-advice-post-list__card-list"
+        >
+          <li class="travel-tips-and-advice-post-container">
+            <article class="travel-tips-and-advice-post">
+              <header class="travel-tips-and-advice-post__heading">
+                <a class="travel-tips-and-advice-post__link" href="#">
+                  <img
+                    class="travel-tips-and-advice-post__illustration"
+                    src="./images/tips-and-advice/east-village-ice-cream-crawl..jpg"
+                    alt=""
+                  />
+                </a>
               </header>
 
-              <p>
-                We will stop at five different world-class ice cream
-                shops on this 1.5 mile 1.5 hour tour. At each ice
-                cream store we'll explore the story behind the
-                business and see what makes the ice cream unique as
-                you savor every…
-              </p>
+              <div
+                class="travel-tips-and-advice-post__content-and-metadata"
+              >
+                <div
+                  class="travel-tips-and-advice-post__title-and-content-footage"
+                >
+                  <h3 class="travel-tips-and-advice-post__title">
+                    East Village Ice Cream Crawl
+                  </h3>
 
-              <footer>
-                <p>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <p
+                    class="travel-tips-and-advice-post__content-footage"
                   >
-                    <path
-                      d="M17 4H21C21.2652 4 21.5196 4.10536 21.7071 4.29289C21.8946 4.48043 22 4.73478 22 5V21C22 21.2652 21.8946 21.5196 21.7071 21.7071C21.5196 21.8946 21.2652 22 21 22H3C2.73478 22 2.48043 21.8946 2.29289 21.7071C2.10536 21.5196 2 21.2652 2 21V5C2 4.73478 2.10536 4.48043 2.29289 4.29289C2.48043 4.10536 2.73478 4 3 4H7V2H9V4H15V2H17V4ZM20 12H4V20H20V12ZM15 6H9V8H7V6H4V10H20V6H17V8H15V6ZM6 14H8V16H6V14ZM11 14H13V16H11V14ZM16 14H18V16H16V14Z"
-                      fill="currentColor"
-                    />
-                  </svg>
+                    We will stop at five different world-class ice
+                    cream shops on this 1.5 mile 1.5 hour tour. At
+                    each ice cream store we'll explore the story
+                    behind the business and see what makes the ice
+                    cream unique as you savor every…
+                  </p>
+                </div>
 
-                  <time datetime="2023-02-07">Today</time>
-                </p>
-                <address>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                <footer class="travel-tips-and-advice-post__metadata">
+                  <p
+                    class="travel-tips-and-advice-post__date-container"
                   >
-                    <path
-                      d="M4 22C4 19.8783 4.84285 17.8434 6.34315 16.3431C7.84344 14.8429 9.87827 14 12 14C14.1217 14 16.1566 14.8429 17.6569 16.3431C19.1571 17.8434 20 19.8783 20 22H18C18 20.4087 17.3679 18.8826 16.2426 17.7574C15.1174 16.6321 13.5913 16 12 16C10.4087 16 8.88258 16.6321 7.75736 17.7574C6.63214 18.8826 6 20.4087 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"
-                      fill="currentColor"
-                    />
-                  </svg>
+                    <svg
+                      class="travel-tips-and-advice-post__date-icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17 4H21C21.2652 4 21.5196 4.10536 21.7071 4.29289C21.8946 4.48043 22 4.73478 22 5V21C22 21.2652 21.8946 21.5196 21.7071 21.7071C21.5196 21.8946 21.2652 22 21 22H3C2.73478 22 2.48043 21.8946 2.29289 21.7071C2.10536 21.5196 2 21.2652 2 21V5C2 4.73478 2.10536 4.48043 2.29289 4.29289C2.48043 4.10536 2.73478 4 3 4H7V2H9V4H15V2H17V4ZM20 12H4V20H20V12ZM15 6H9V8H7V6H4V10H20V6H17V8H15V6ZM6 14H8V16H6V14ZM11 14H13V16H11V14ZM16 14H18V16H16V14Z"
+                        fill="currentColor"
+                      />
+                    </svg>
 
-                  Maria Philips
-                </address>
-                <p>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <time
+                      class="travel-tips-and-advice-post__date"
+                      datetime="2023-02-07"
+                      >Today</time
+                    >
+                  </p>
+
+                  <address
+                    class="travel-tips-and-advice-post__author-info-container"
                   >
-                    <path
-                      d="M7.29101 20.824L2.00001 22L3.17601 16.709C2.40154 15.2604 1.99754 13.6426 2.00001 12C2.00001 6.477 6.47701 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C10.3574 22.0025 8.73963 21.5985 7.29101 20.824ZM7.58101 18.711L8.23401 19.061C9.39256 19.6801 10.6864 20.0027 12 20C13.5823 20 15.129 19.5308 16.4446 18.6518C17.7602 17.7727 18.7855 16.5233 19.391 15.0615C19.9965 13.5997 20.155 11.9911 19.8463 10.4393C19.5376 8.88743 18.7757 7.46197 17.6569 6.34315C16.538 5.22433 15.1126 4.4624 13.5607 4.15372C12.0089 3.84504 10.4004 4.00346 8.93854 4.60896C7.47674 5.21447 6.22731 6.23984 5.34825 7.55544C4.4692 8.87103 4.00001 10.4177 4.00001 12C4.00001 13.334 4.32501 14.618 4.94001 15.766L5.28901 16.419L4.63401 19.366L7.58101 18.711Z"
-                      fill="#5243C2"
-                    />
-                  </svg>
+                    <svg
+                      class="travel-tips-and-advice-post__author-icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 22C4 19.8783 4.84285 17.8434 6.34315 16.3431C7.84344 14.8429 9.87827 14 12 14C14.1217 14 16.1566 14.8429 17.6569 16.3431C19.1571 17.8434 20 19.8783 20 22H18C18 20.4087 17.3679 18.8826 16.2426 17.7574C15.1174 16.6321 13.5913 16 12 16C10.4087 16 8.88258 16.6321 7.75736 17.7574C6.63214 18.8826 6 20.4087 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"
+                        fill="currentColor"
+                      />
+                    </svg>
 
-                  <span>2</span>
-                </p>
-              </footer>
+                    <span
+                      class="travel-tips-and-advice-post__author-name"
+                      >Maria Philips</span
+                    >
+                  </address>
+
+                  <p
+                    class="travel-tips-and-advice-post__comment-count-container"
+                  >
+                    <svg
+                      class="travel-tips-and-advice-post__comment-icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.29101 20.824L2.00001 22L3.17601 16.709C2.40154 15.2604 1.99754 13.6426 2.00001 12C2.00001 6.477 6.47701 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C10.3574 22.0025 8.73963 21.5985 7.29101 20.824ZM7.58101 18.711L8.23401 19.061C9.39256 19.6801 10.6864 20.0027 12 20C13.5823 20 15.129 19.5308 16.4446 18.6518C17.7602 17.7727 18.7855 16.5233 19.391 15.0615C19.9965 13.5997 20.155 11.9911 19.8463 10.4393C19.5376 8.88743 18.7757 7.46197 17.6569 6.34315C16.538 5.22433 15.1126 4.4624 13.5607 4.15372C12.0089 3.84504 10.4004 4.00346 8.93854 4.60896C7.47674 5.21447 6.22731 6.23984 5.34825 7.55544C4.4692 8.87103 4.00001 10.4177 4.00001 12C4.00001 13.334 4.32501 14.618 4.94001 15.766L5.28901 16.419L4.63401 19.366L7.58101 18.711Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+
+                    <span
+                      class="travel-tips-and-advice-post__comment-count"
+                      >2</span
+                    >
+                  </p>
+                </footer>
+              </div>
             </article>
           </li>
 
-          <li>
-            <article>
-              <header>
-                <h3>
-                  <a href="#">Brooklyn Bridge cinematic photo walk</a>
-                </h3>
+          <li class="travel-tips-and-advice-post-container">
+            <article class="travel-tips-and-advice-post">
+              <header class="travel-tips-and-advice-post__heading">
+                <a class="travel-tips-and-advice-post__link" href="#">
+                  <img
+                    class="travel-tips-and-advice-post__illustration"
+                    src="./images/tips-and-advice/brooklyn-bridge-cinematic.jpg"
+                    alt=""
+                  />
+                </a>
               </header>
 
-              <p>
-                This experience takes place at the Brooklyn Bridge
-                Park and Brooklyn Bridge, but I’m always open to
-                capture clients at different locations upon request
-                for an additional charge.
-              </p>
+              <div
+                class="travel-tips-and-advice-post__content-and-metadata"
+              >
+                <div
+                  class="travel-tips-and-advice-post__title-and-content-footage"
+                >
+                  <h3 class="travel-tips-and-advice-post__title">
+                    Brooklyn Bridge cinematic photo walk
+                  </h3>
 
-              <footer>
-                <p>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <p
+                    class="travel-tips-and-advice-post__content-footage"
                   >
-                    <path
-                      d="M17 4H21C21.2652 4 21.5196 4.10536 21.7071 4.29289C21.8946 4.48043 22 4.73478 22 5V21C22 21.2652 21.8946 21.5196 21.7071 21.7071C21.5196 21.8946 21.2652 22 21 22H3C2.73478 22 2.48043 21.8946 2.29289 21.7071C2.10536 21.5196 2 21.2652 2 21V5C2 4.73478 2.10536 4.48043 2.29289 4.29289C2.48043 4.10536 2.73478 4 3 4H7V2H9V4H15V2H17V4ZM20 12H4V20H20V12ZM15 6H9V8H7V6H4V10H20V6H17V8H15V6ZM6 14H8V16H6V14ZM11 14H13V16H11V14ZM16 14H18V16H16V14Z"
-                      fill="currentColor"
-                    />
-                  </svg>
+                    This experience takes place at the Brooklyn Bridge
+                    Park and Brooklyn Bridge, but I’m always open to
+                    capture clients at different locations upon
+                    request for an additional charge.
+                  </p>
+                </div>
 
-                  <time datetime="2023-02-07">Today</time>
-                </p>
-                <address>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                <footer class="travel-tips-and-advice-post__metadata">
+                  <p
+                    class="travel-tips-and-advice-post__date-container"
                   >
-                    <path
-                      d="M4 22C4 19.8783 4.84285 17.8434 6.34315 16.3431C7.84344 14.8429 9.87827 14 12 14C14.1217 14 16.1566 14.8429 17.6569 16.3431C19.1571 17.8434 20 19.8783 20 22H18C18 20.4087 17.3679 18.8826 16.2426 17.7574C15.1174 16.6321 13.5913 16 12 16C10.4087 16 8.88258 16.6321 7.75736 17.7574C6.63214 18.8826 6 20.4087 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"
-                      fill="currentColor"
-                    />
-                  </svg>
+                    <svg
+                      class="travel-tips-and-advice-post__date-icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17 4H21C21.2652 4 21.5196 4.10536 21.7071 4.29289C21.8946 4.48043 22 4.73478 22 5V21C22 21.2652 21.8946 21.5196 21.7071 21.7071C21.5196 21.8946 21.2652 22 21 22H3C2.73478 22 2.48043 21.8946 2.29289 21.7071C2.10536 21.5196 2 21.2652 2 21V5C2 4.73478 2.10536 4.48043 2.29289 4.29289C2.48043 4.10536 2.73478 4 3 4H7V2H9V4H15V2H17V4ZM20 12H4V20H20V12ZM15 6H9V8H7V6H4V10H20V6H17V8H15V6ZM6 14H8V16H6V14ZM11 14H13V16H11V14ZM16 14H18V16H16V14Z"
+                        fill="currentColor"
+                      />
+                    </svg>
 
-                  James Calzoni
-                </address>
-                <p>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <time
+                      class="travel-tips-and-advice-post__date"
+                      datetime="2023-02-07"
+                      >Today</time
+                    >
+                  </p>
+
+                  <address
+                    class="travel-tips-and-advice-post__author-info-container"
                   >
-                    <path
-                      d="M7.29101 20.824L2.00001 22L3.17601 16.709C2.40154 15.2604 1.99754 13.6426 2.00001 12C2.00001 6.477 6.47701 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C10.3574 22.0025 8.73963 21.5985 7.29101 20.824ZM7.58101 18.711L8.23401 19.061C9.39256 19.6801 10.6864 20.0027 12 20C13.5823 20 15.129 19.5308 16.4446 18.6518C17.7602 17.7727 18.7855 16.5233 19.391 15.0615C19.9965 13.5997 20.155 11.9911 19.8463 10.4393C19.5376 8.88743 18.7757 7.46197 17.6569 6.34315C16.538 5.22433 15.1126 4.4624 13.5607 4.15372C12.0089 3.84504 10.4004 4.00346 8.93854 4.60896C7.47674 5.21447 6.22731 6.23984 5.34825 7.55544C4.4692 8.87103 4.00001 10.4177 4.00001 12C4.00001 13.334 4.32501 14.618 4.94001 15.766L5.28901 16.419L4.63401 19.366L7.58101 18.711Z"
-                      fill="#5243C2"
-                    />
-                  </svg>
+                    <svg
+                      class="travel-tips-and-advice-post__author-icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 22C4 19.8783 4.84285 17.8434 6.34315 16.3431C7.84344 14.8429 9.87827 14 12 14C14.1217 14 16.1566 14.8429 17.6569 16.3431C19.1571 17.8434 20 19.8783 20 22H18C18 20.4087 17.3679 18.8826 16.2426 17.7574C15.1174 16.6321 13.5913 16 12 16C10.4087 16 8.88258 16.6321 7.75736 17.7574C6.63214 18.8826 6 20.4087 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"
+                        fill="currentColor"
+                      />
+                    </svg>
 
-                  <span>17</span>
-                </p>
-              </footer>
+                    <span
+                      class="travel-tips-and-advice-post__author-name"
+                      >James Calzoni</span
+                    >
+                  </address>
+
+                  <p
+                    class="travel-tips-and-advice-post__comment-count-container"
+                  >
+                    <svg
+                      class="travel-tips-and-advice-post__comment-icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.29101 20.824L2.00001 22L3.17601 16.709C2.40154 15.2604 1.99754 13.6426 2.00001 12C2.00001 6.477 6.47701 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C10.3574 22.0025 8.73963 21.5985 7.29101 20.824ZM7.58101 18.711L8.23401 19.061C9.39256 19.6801 10.6864 20.0027 12 20C13.5823 20 15.129 19.5308 16.4446 18.6518C17.7602 17.7727 18.7855 16.5233 19.391 15.0615C19.9965 13.5997 20.155 11.9911 19.8463 10.4393C19.5376 8.88743 18.7757 7.46197 17.6569 6.34315C16.538 5.22433 15.1126 4.4624 13.5607 4.15372C12.0089 3.84504 10.4004 4.00346 8.93854 4.60896C7.47674 5.21447 6.22731 6.23984 5.34825 7.55544C4.4692 8.87103 4.00001 10.4177 4.00001 12C4.00001 13.334 4.32501 14.618 4.94001 15.766L5.28901 16.419L4.63401 19.366L7.58101 18.711Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+
+                    <span
+                      class="travel-tips-and-advice-post__comment-count"
+                      >17</span
+                    >
+                  </p>
+                </footer>
+              </div>
             </article>
           </li>
         </ul>
       </section>
 
       <!-- Activities -->
-      <section>
+      <section class="activities">
         <!-- Section Title -->
-        <div>
-          <h2>Activities</h2>
+        <div class="activities__heading">
+          <h2 class="activities__title">Activities</h2>
 
-          <a href="#">
+          <a
+            class="button button--secondary button--sx button--link"
+            href="#"
+          >
             View all
             <svg
+              class="button__icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -971,47 +1241,65 @@
           </a>
         </div>
 
-        <ul>
+        <ul
+          class="activities-card-list activities-card-list__card-list"
+        >
           <li>
-            <a href="#">
-              <img src="./images/activities/sailing.jpg" alt="" />
-
-              <h3>Sailing</h3>
+            <a class="activities-card" href="#">
+              <img
+                class="activities-card__illustration"
+                src="./images/activities/sailing.jpg"
+                alt=""
+              />
             </a>
+
+            <h3 class="activities-card__title">Sailing</h3>
           </li>
 
           <li>
-            <a href="#">
-              <img src="./images/activities/climbing.jpg" alt="" />
-
-              <h3>Climbing</h3>
+            <a class="activities-card" href="#">
+              <img
+                class="activities-card__illustration"
+                src="./images/activities/climbing.jpg"
+                alt=""
+              />
             </a>
+
+            <h3 class="activities-card__title">Climbing</h3>
           </li>
 
           <li>
-            <a href="#">
-              <img src="./images/activities/skiing.jpg" alt="" />
-
-              <h3>Skiing</h3>
+            <a class="activities-card" href="#">
+              <img
+                class="activities-card__illustration"
+                src="./images/activities/skiing.jpg"
+                alt=""
+              />
             </a>
+
+            <h3 class="activities-card__title">Skiing</h3>
           </li>
 
           <li>
-            <a href="#">
-              <img src="./images/activities/hiking.jpg" alt="" />
-
-              <h3>Hiking</h3>
+            <a class="activities-card" href="#">
+              <img
+                class="activities-card__illustration"
+                src="./images/activities/hiking.jpg"
+                alt=""
+              />
             </a>
+
+            <h3 class="activities-card__title">Hiking</h3>
           </li>
         </ul>
       </section>
 
-      <!-- About -->
-      <section>
-        <div>
-          <h2>About</h2>
+      <!-- About Us -->
+      <section class="about-us">
+        <div class="about-us__content-footage-container">
+          <h2 class="about-us__title">About Us</h2>
 
-          <p>
+          <p class="about-us__content-footage">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Suspendisse a sapien justo. Nulla facilisis tristique
             imperdiet. Nullam a placerat odio. Sed in ex augue.
@@ -1020,7 +1308,9 @@
             nostra, per inceptos himenaeos.
           </p>
 
-          <a href="#"
+          <a
+            class="button button--secondary button--sx button--link"
+            href="#"
             >Read more
             <svg
               width="24"
@@ -1036,150 +1326,255 @@
           ></a>
         </div>
 
-        <div>
-          <img
-            src="./images/about/team-photo.jpg"
-            alt="Thomas, Julien et Nicolas entrain de regarder une vidéo de chat."
-          />
-        </div>
+        <img
+          class="about__illustration"
+          src="./images/about/team-photo.jpg"
+          alt="Thomas, Julien et Nicolas entrain de regarder une vidéo de chat."
+        />
       </section>
     </main>
 
-    <footer>
-      <address>
-        <img src="./icons/logos/2rism-logo.svg" alt="Tourisme" />
-
-        <p>
-          We always make our customers happy by providing as many
-          choises as possible
-        </p>
-
-        <div>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/"
-                ><svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2C6.477 2 2 6.477 2 12C2 16.991 5.657 21.128 10.438 21.879V14.89H7.898V12H10.438V9.797C10.438 7.291 11.93 5.907 14.215 5.907C15.309 5.907 16.453 6.102 16.453 6.102V8.562H15.193C13.95 8.562 13.563 9.333 13.563 10.124V12H16.336L15.893 14.89H13.563V21.879C18.343 21.129 22 16.99 22 12C22 6.477 17.523 2 12 2Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://twitter.com/">
-                <!-- logos/twitter-fill -->
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22.162 5.65599C21.3985 5.99368 20.589 6.21546 19.76 6.31399C20.6337 5.79142 21.2877 4.969 21.6 3.99999C20.78 4.48799 19.881 4.82999 18.944 5.01499C18.3146 4.34157 17.4804 3.89495 16.5709 3.74457C15.6615 3.59419 14.7279 3.74848 13.9153 4.18344C13.1026 4.6184 12.4564 5.30967 12.0771 6.14978C11.6978 6.98989 11.6067 7.93177 11.818 8.82899C10.1551 8.74564 8.52832 8.31351 7.04328 7.56065C5.55823 6.80779 4.24812 5.75104 3.19799 4.45899C2.82628 5.09744 2.63095 5.82321 2.63199 6.56199C2.63199 8.01199 3.36999 9.29299 4.49199 10.043C3.828 10.0221 3.17862 9.84277 2.59799 9.51999V9.57199C2.59819 10.5377 2.93236 11.4736 3.54384 12.221C4.15532 12.9685 5.00647 13.4815 5.95299 13.673C5.33661 13.84 4.6903 13.8646 4.06299 13.745C4.32986 14.5762 4.85 15.3032 5.55058 15.8241C6.25117 16.345 7.09712 16.6338 7.96999 16.65C7.10247 17.3313 6.10917 17.835 5.04687 18.1322C3.98458 18.4293 2.87412 18.5142 1.77899 18.382C3.69069 19.6114 5.91609 20.2641 8.18899 20.262C15.882 20.262 20.089 13.889 20.089 8.36199C20.089 8.18199 20.084 7.99999 20.076 7.82199C20.8949 7.23016 21.6016 6.49701 22.163 5.65699L22.162 5.65599Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.instagram.com/">
-                <!-- logos/instagram-fill -->
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7V7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9V9Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </address>
-
-      <section>
-        <h2>About</h2>
-
-        <div>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Menu</a></li>
-          </ul>
-        </div>
-      </section>
-    </footer>
-
-    <section>
-      <h2>Support</h2>
-
-      <div>
-        <ul>
-          <li><a href="#">Account</a></li>
-          <li><a href="#">Support Center</a></li>
-          <li><a href="#">Feedback</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <form>
-      <h2>Subscribe on our destination review newsletters</h2>
-
-      <div>
+    <footer class="footer">
+      <address class="footer__company-infos">
         <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
+          class="footer__company-logo"
+          width="88"
+          height="36"
+          viewBox="0 0 88 36"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3V3ZM20 7.238L12.072 14.338L4 7.216V19H20V7.238ZM4.511 5L12.061 11.662L19.502 5H4.511Z"
+            d="M0.048 24.228C0.592 23.796 0.84 23.596 0.792 23.628C2.36 22.332 3.592 21.268 4.488 20.436C5.4 19.604 6.168 18.732 6.792 17.82C7.416 16.908 7.728 16.02 7.728 15.156C7.728 14.5 7.576 13.988 7.272 13.62C6.968 13.252 6.512 13.068 5.904 13.068C5.296 13.068 4.816 13.3 4.464 13.764C4.128 14.212 3.96 14.852 3.96 15.684H0C0.032 14.324 0.32 13.188 0.864 12.276C1.424 11.364 2.152 10.692 3.048 10.26C3.96 9.828 4.968 9.612 6.072 9.612C7.976 9.612 9.408 10.1 10.368 11.076C11.344 12.052 11.832 13.324 11.832 14.892C11.832 16.604 11.248 18.196 10.08 19.668C8.912 21.124 7.424 22.548 5.616 23.94H12.096V27.276H0.048V24.228Z"
             fill="currentColor"
           />
+          <path
+            d="M18.4149 16.356C18.8949 15.62 19.4949 15.044 20.2149 14.628C20.9349 14.196 21.7349 13.98 22.6149 13.98V18.324H21.4869C20.4629 18.324 19.6949 18.548 19.1829 18.996C18.6709 19.428 18.4149 20.196 18.4149 21.3V27.516H14.3109V14.124H18.4149V16.356Z"
+            fill="currentColor"
+          />
+          <path
+            d="M26.6406 12.732C25.9206 12.732 25.3286 12.524 24.8646 12.108C24.4166 11.676 24.1926 11.148 24.1926 10.524C24.1926 9.884 24.4166 9.356 24.8646 8.94C25.3286 8.508 25.9206 8.292 26.6406 8.292C27.3446 8.292 27.9206 8.508 28.3686 8.94C28.8326 9.356 29.0646 9.884 29.0646 10.524C29.0646 11.148 28.8326 11.676 28.3686 12.108C27.9206 12.524 27.3446 12.732 26.6406 12.732ZM28.6806 14.124V27.516H24.5766V14.124H28.6806Z"
+            fill="currentColor"
+          />
+          <path
+            d="M37.1027 27.708C35.9347 27.708 34.8947 27.508 33.9827 27.108C33.0707 26.708 32.3507 26.164 31.8227 25.476C31.2947 24.772 30.9987 23.988 30.9347 23.124H34.9907C35.0387 23.588 35.2547 23.964 35.6387 24.252C36.0227 24.54 36.4947 24.684 37.0547 24.684C37.5667 24.684 37.9587 24.588 38.2307 24.396C38.5187 24.188 38.6627 23.924 38.6627 23.604C38.6627 23.22 38.4627 22.94 38.0627 22.764C37.6627 22.572 37.0147 22.364 36.1187 22.14C35.1587 21.916 34.3587 21.684 33.7187 21.444C33.0787 21.188 32.5267 20.796 32.0627 20.268C31.5987 19.724 31.3667 18.996 31.3667 18.084C31.3667 17.316 31.5747 16.62 31.9907 15.996C32.4227 15.356 33.0467 14.852 33.8627 14.484C34.6947 14.116 35.6787 13.932 36.8147 13.932C38.4947 13.932 39.8147 14.348 40.7747 15.18C41.7507 16.012 42.3107 17.116 42.4547 18.492H38.6627C38.5987 18.028 38.3907 17.66 38.0387 17.388C37.7027 17.116 37.2547 16.98 36.6947 16.98C36.2147 16.98 35.8467 17.076 35.5907 17.268C35.3347 17.444 35.2067 17.692 35.2067 18.012C35.2067 18.396 35.4067 18.684 35.8067 18.876C36.2227 19.068 36.8627 19.26 37.7267 19.452C38.7187 19.708 39.5267 19.964 40.1507 20.22C40.7747 20.46 41.3187 20.86 41.7827 21.42C42.2627 21.964 42.5107 22.7 42.5267 23.628C42.5267 24.412 42.3027 25.116 41.8547 25.74C41.4227 26.348 40.7907 26.828 39.9587 27.18C39.1427 27.532 38.1907 27.708 37.1027 27.708Z"
+            fill="currentColor"
+          />
+          <path
+            d="M62.1255 13.98C63.7895 13.98 65.1095 14.484 66.0855 15.492C67.0775 16.5 67.5735 17.9 67.5735 19.692V27.516H63.4935V20.244C63.4935 19.38 63.2615 18.716 62.7975 18.252C62.3495 17.772 61.7255 17.532 60.9255 17.532C60.1255 17.532 59.4935 17.772 59.0295 18.252C58.5815 18.716 58.3575 19.38 58.3575 20.244V27.516H54.2775V20.244C54.2775 19.38 54.0455 18.716 53.5815 18.252C53.1335 17.772 52.5095 17.532 51.7095 17.532C50.9095 17.532 50.2775 17.772 49.8135 18.252C49.3655 18.716 49.1415 19.38 49.1415 20.244V27.516H45.0375V14.124H49.1415V15.804C49.5575 15.244 50.1015 14.804 50.7735 14.484C51.4455 14.148 52.2055 13.98 53.0535 13.98C54.0615 13.98 54.9575 14.196 55.7415 14.628C56.5415 15.06 57.1655 15.676 57.6135 16.476C58.0775 15.74 58.7095 15.14 59.5095 14.676C60.3095 14.212 61.1815 13.98 62.1255 13.98Z"
+            fill="currentColor"
+          />
+          <g clip-path="url(#clip0_556_631)">
+            <path
+              d="M72.8708 6.502C72.5228 6.386 72.5195 6.19867 72.8775 6.07933L85.6022 1.838C85.9548 1.72067 86.1568 1.918 86.0582 2.26333L82.4222 14.9873C82.3222 15.34 82.1188 15.352 81.9695 15.0173L79.5735 9.62533L83.5735 4.292L78.2402 8.292L72.8708 6.502V6.502Z"
+              fill="#5243C2"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_556_631">
+              <rect
+                width="16"
+                height="16"
+                fill="white"
+                transform="translate(71.5735 0.292)"
+              />
+            </clipPath>
+          </defs>
         </svg>
 
-        <div>
-          <label for="newsletter-email">Your Email</label>
-          <input
-            type="email"
-            name="newsletter-email"
-            id="newsletter-email"
-          />
-        </div>
+        <p class="footer__company-slogan">
+          We always make our customers happy by providing <br />
+          as many choises as possible
+        </p>
 
-        <button type="submit">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 13H4V11H12V4L20 12L12 20V13Z"
-              fill="currentColor"
-            />
-          </svg>
-        </button>
+        <ul class="footer__social-network-links-list">
+          <li>
+            <a href="https://www.facebook.com/"
+              ><svg
+                class="footer__social-network-link"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12C2 16.991 5.657 21.128 10.438 21.879V14.89H7.898V12H10.438V9.797C10.438 7.291 11.93 5.907 14.215 5.907C15.309 5.907 16.453 6.102 16.453 6.102V8.562H15.193C13.95 8.562 13.563 9.333 13.563 10.124V12H16.336L15.893 14.89H13.563V21.879C18.343 21.129 22 16.99 22 12C22 6.477 17.523 2 12 2Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/">
+              <!-- logos/twitter-fill -->
+              <svg
+                class="footer__social-network-link"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.162 5.65599C21.3985 5.99368 20.589 6.21546 19.76 6.31399C20.6337 5.79142 21.2877 4.969 21.6 3.99999C20.78 4.48799 19.881 4.82999 18.944 5.01499C18.3146 4.34157 17.4804 3.89495 16.5709 3.74457C15.6615 3.59419 14.7279 3.74848 13.9153 4.18344C13.1026 4.6184 12.4564 5.30967 12.0771 6.14978C11.6978 6.98989 11.6067 7.93177 11.818 8.82899C10.1551 8.74564 8.52832 8.31351 7.04328 7.56065C5.55823 6.80779 4.24812 5.75104 3.19799 4.45899C2.82628 5.09744 2.63095 5.82321 2.63199 6.56199C2.63199 8.01199 3.36999 9.29299 4.49199 10.043C3.828 10.0221 3.17862 9.84277 2.59799 9.51999V9.57199C2.59819 10.5377 2.93236 11.4736 3.54384 12.221C4.15532 12.9685 5.00647 13.4815 5.95299 13.673C5.33661 13.84 4.6903 13.8646 4.06299 13.745C4.32986 14.5762 4.85 15.3032 5.55058 15.8241C6.25117 16.345 7.09712 16.6338 7.96999 16.65C7.10247 17.3313 6.10917 17.835 5.04687 18.1322C3.98458 18.4293 2.87412 18.5142 1.77899 18.382C3.69069 19.6114 5.91609 20.2641 8.18899 20.262C15.882 20.262 20.089 13.889 20.089 8.36199C20.089 8.18199 20.084 7.99999 20.076 7.82199C20.8949 7.23016 21.6016 6.49701 22.163 5.65699L22.162 5.65599Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/">
+              <!-- logos/instagram-fill -->
+              <svg
+                class="footer__social-network-link"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7V7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9V9Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+
+      <div class="footer__navigation">
+        <section>
+          <h2 class="footer__navigation-title">About</h2>
+
+          <ul class="footer__navigation-link-list">
+            <li>
+              <a class="footer__navigation-link" href="#">About Us</a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">Features</a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">News</a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">Menu</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="footer__navigation-title">Company</h2>
+
+          <ul class="footer__navigation-link-list">
+            <li>
+              <a class="footer__navigation-link" href="#"
+                >Why 2rism</a
+              >
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"
+                >Partner With Us</a
+              >
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">FAQ</a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="footer__navigation-title">Support</h2>
+
+          <ul class="footer__navigation-link-list">
+            <li>
+              <a class="footer__navigation-link" href="#">Account</a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"
+                >Support Center</a
+              >
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">Feedback</a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </section>
       </div>
-    </form>
+
+      <form
+        class="footer__newsletter-subcription-form"
+        method="get"
+        action="#"
+      >
+        <h2 class="footer__newsletter-subcription-form-title">
+          Subscribe on our destination review newsletters
+        </h2>
+
+        <div
+          class="footer__newsletter-subcription-form-field-and-submit-button"
+        >
+          <div
+            class="form-field form-field--newsletter-subcription-form"
+          >
+            <svg
+              class="form-field__icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3V3ZM20 7.238L12.072 14.338L4 7.216V19H20V7.238ZM4.511 5L12.061 11.662L19.502 5H4.511Z"
+                fill="currentColor"
+              />
+            </svg>
+
+            <div
+              class="form-field__label-and-input-part form-field--newsletter-subcription-form"
+            >
+              <label for="newsletter-email">Your Email</label>
+              <input
+                class="form-control"
+                type="email"
+                name="newsletter-email"
+                id="newsletter-email"
+                value="johndoe@gmail.com"
+              />
+            </div>
+          </div>
+
+          <button
+            class="button button--cta button--newsletter-subcription-form"
+            type="submit"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 13H4V11H12V4L20 12L12 20V13Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </footer>
   </body>
 </html>

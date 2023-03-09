@@ -7,4 +7,20 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: unit-converter(183, px, rem);
+
+  &--dropdown-menu-open {
+    margin-bottom: 0px;
+  }
+  
+  &__home-page-link--dropdown-menu-open {
+    display: none;
+  }
+
+  &__company-logo {
+    color: $light-color;
+  }
+
+  @media (max-width: 629px) {
+    margin-bottom: 8rem;
+  }
 }
