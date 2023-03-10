@@ -1,0 +1,19 @@
+@import "../utils/extends/section";
+
+.popular-destinations {
+  @extend %section;
+
+  &__title {
+    margin-top: 0px;
+  }
+
+  @media (max-width: 629px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__title {
+      font-size: $font-size-l;
+    }
+  }
+}

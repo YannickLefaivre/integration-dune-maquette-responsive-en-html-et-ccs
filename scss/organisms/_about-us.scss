@@ -1,0 +1,30 @@
+.about-us {
+  @extend %section;
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10%;
+  gap: unit-converter(32, px, rem);
+
+  &__content-footage-container {
+    width: 50%;
+  }
+
+  &__title {
+    margin-top: 0px;
+    margin-bottom: unit-converter(32, px, rem);
+    line-height: 48px;
+  }
+
+  &__content-footage {
+    margin-bottom: unit-converter(32, px, rem);
+    line-height: 32px;
+  }
+
+  &__illustration {
+    width: 50%;
+    border-radius: unit-converter(24, px, rem);
+  }
+}

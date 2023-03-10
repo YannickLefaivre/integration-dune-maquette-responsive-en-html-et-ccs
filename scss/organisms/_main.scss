@@ -1,0 +1,11 @@
+.main {
+  padding-inline: 20%;
+
+  &--dropdown-menu-open {
+    display: none;
+  }
+  
+  @media (max-width: 1920px) {
+    padding-inline: 8%;
+  }
+}

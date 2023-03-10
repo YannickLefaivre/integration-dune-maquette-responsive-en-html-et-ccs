@@ -1,0 +1,15 @@
+@import "../functions/unit-converter";
+
+%section {
+  padding-bottom: unit-converter(120, px, rem);
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-top: 0px;
+    text-align: center;
+  }
+}

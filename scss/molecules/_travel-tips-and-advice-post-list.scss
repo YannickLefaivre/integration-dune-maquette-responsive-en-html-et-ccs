@@ -1,0 +1,14 @@
+.travel-tips-and-advice-post-list {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 0px;
+  gap: unit-converter(32, px, rem);
+
+  @media (max-width: 1244px) {
+    margin-top: 0px;
+    flex-wrap: wrap;
+    row-gap: unit-converter(36, px, rem);
+
+    justify-content: center;
+  }
+}

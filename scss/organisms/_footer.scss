@@ -1,0 +1,81 @@
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: unit-converter($margin-inline-footer-section, px, rem);
+  padding: unit-converter(120, px, rem) 20%;
+  background-color: scale-color(
+    $color: $light-color,
+    $lightness: -2.5%
+  );
+
+  &--dropdown-menu-open {
+    display: none;
+  }
+
+  &__company-infos {
+    flex: content;
+  }
+
+  &__company-logo {
+    color: $dark-color;
+  }
+
+  &__company-slogan {
+    margin-bottom: unit-converter(32, px, rem);
+    font-size: $font-size-blog-post-infos;
+    line-height: 19.5px;
+  }
+
+  &__social-network-links-list {
+    display: flex;
+    flex-direction: row;
+    gap: unit-converter(32, px, rem);
+  }
+
+  &__social-network-link {
+    color: $secondary-color;
+  }
+
+  &__navigation {
+    flex: 33.33%;
+    display: flex;
+    flex-direction: row;
+    gap: unit-converter($margin-inline-footer-section, px, rem);
+  }
+
+  &__navigation-title {
+    margin-top: 0px;
+    margin-bottom: unit-converter($margin-bottom-footer-section-title, px, rem);
+    font-size: $font-size;
+  }
+
+  &__navigation-link-list {
+    display: flex;
+    flex-direction: column;
+    gap: unit-converter(12, px, rem);
+  }
+
+  &__navigation-link {
+    color: scale-color($color: $dark-color, $lightness: 35.5%);
+
+    &:visited {
+      color: scale-color($color: $dark-color, $lightness: 35.5%);
+    }
+  }
+
+  &__newsletter-subcription-form {
+    flex: 33.33%;
+  }
+
+  &__newsletter-subcription-form-title {
+    margin-top: 0px;
+    margin-bottom: unit-converter($margin-bottom-footer-section-title, px, rem);
+    font-size: $font-size;
+  }
+
+  &__newsletter-subcription-form-field-and-submit-button {
+    display: flex;
+    align-items: center;
+  }
+}
