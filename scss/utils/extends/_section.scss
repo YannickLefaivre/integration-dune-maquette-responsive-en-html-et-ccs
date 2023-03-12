@@ -1,0 +1,20 @@
+@import "../functions/unit-converter";
+
+%section {
+  width: 100%;
+  padding-bottom: unit-converter(120, px, rem);
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  @media (max-width: 629px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,140 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: unit-converter($margin-inline-footer-section, px, rem);
+  padding: unit-converter(120, px, rem) 20%;
+  background-color: scale-color(
+    $color: $light-color,
+    $lightness: -2.5%
+  );
+  transition: all 0.3s ease-out;
+
+  &--dropdown-menu-open {
+    display: none;
+  }
+
+  &__company-logo {
+    color: $dark-color;
+  }
+
+  &__company-slogan {
+    margin-bottom: unit-converter(32, px, rem);
+    font-size: $font-size-blog-post-infos;
+    font-style: normal;
+    line-height: 19.5px;
+  }
+
+  &__social-network-links-list {
+    display: flex;
+    flex-direction: row;
+    gap: unit-converter(32, px, rem);
+  }
+
+  &__social-network-link {
+    color: $secondary-color;
+  }
+
+  &__navigation {
+    flex: 0.8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unit-converter($margin-inline-footer-section, px, rem);
+  }
+
+  &__navigation-title {
+    margin-top: 0px;
+    margin-bottom: unit-converter(
+      $margin-bottom-footer-section-title,
+      px,
+      rem
+    );
+    font-size: $font-size;
+  }
+
+  &__navigation-link-list {
+    display: flex;
+    flex-direction: column;
+    margin-block: 0px;
+    gap: unit-converter(12, px, rem);
+  }
+
+  &__navigation-link {
+    color: scale-color($color: $dark-color, $lightness: 35.5%);
+
+    &:visited {
+      color: scale-color($color: $dark-color, $lightness: 35.5%);
+    }
+  }
+
+  &__newsletter-subcription-form-title {
+    margin-top: 0px;
+    margin-bottom: unit-converter(
+      $margin-bottom-footer-section-title,
+      px,
+      rem
+    );
+    font-size: $font-size;
+  }
+
+  &__newsletter-subcription-form-field-and-submit-button {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 1920px) {
+    padding-inline: 8%;
+
+    &__navigation {
+      flex: unset;
+    }
+  }
+
+  @media (max-width: 1236px) {
+    flex-wrap: wrap;
+
+    &__company-infos {
+      flex: 0.5;
+    }
+
+    &__navigation {
+      justify-content: space-between;
+      flex: 0.8;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+
+    &__company-infos {
+      flex: auto;
+    }
+
+    &__navigation {
+      flex: auto;
+      flex-direction: column;
+    }
+
+    &__newsletter-subcription-form {
+      width: max-content;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: auto;
+    padding-inline: 5%;
+
+    &__company-infos {
+      flex: auto;
+    }
+
+    &__navigation {
+      flex: auto;
+      flex-direction: column;
+    }
+
+    &__newsletter-subcription-form {
+      width: auto;
+    }
+  }
+}

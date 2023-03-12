@@ -1,0 +1,16 @@
+.popular-destination-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: unit-converter(8, px, rem); 
+
+  &__title {
+    margin-block: 0px;
+    margin-bottom: unit-converter(4, px, rem);
+  }
+
+  &__subtitle {
+    margin-block: 0px;
+    @extend %location-indicator;
+  }
+}

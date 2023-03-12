@@ -1,0 +1,53 @@
+.hotels-and-restaurants-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: unit-converter(10, px, rem);
+
+  &__link {
+    width: 100%;
+  }
+
+  &__picture {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: unit-converter(12, px, rem);
+  }
+
+  &__location-and-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__location-and-map-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: unit-converter(4, px, rem);
+  }
+
+  &__map-icon {
+    @extend %location-indicator;
+  }
+
+  &__location {
+    @extend %location-indicator;
+    
+    font-size: $font-size-xxs;
+  }
+
+  &__rating {
+    display: flex;
+  }
+
+  &__rating-star {
+    width: unit-converter(16, px, rem);
+    height: unit-converter(16, px, rem);
+    color: $primary-color;
+  }
+}

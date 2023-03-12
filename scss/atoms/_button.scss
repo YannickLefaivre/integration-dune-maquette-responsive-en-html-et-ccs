@@ -50,6 +50,10 @@
     color: scale-color($secondary-color, $lightness: 10%);
   }
 
+  &--search-form {
+    margin-inline: auto;
+  }
+
   &--newsletter-subcription-form {
     width: unit-converter(72, px, rem);
     height: unit-converter(72, px, rem);
@@ -72,6 +76,13 @@
 
     &--link {
       font-size: $font-size-xs;
+    }
+
+    &--newsletter-subcription-form {
+      margin-bottom: 0px;
+      padding: 1rem;
+      width: 3.5rem;
+      height: 3.5rem;
     }
 
     &__icon {

@@ -1,0 +1,19 @@
+@import "../variables/colors";
+@import "../functions/unit-converter";
+
+%post-footage-metadata {
+  display: flex;
+  align-items: center;
+  gap: unit-converter(5.33, px, rem);
+  margin-block: 0px;
+
+  &__icon {
+    width: 1rem;
+    height: 1rem;
+    color: scale-color($color: $light-color, $lightness: -47.2%);
+  }
+
+  &__metadata-value {
+    font-size: $font-size-blog-post-infos;
+  }
+}

@@ -1,0 +1,20 @@
+.hotels-and-restaurants-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: unit-converter(32, px, rem);
+  margin-block: 0px;
+
+  @media (max-width: 1236px) {
+    justify-content: space-evenly;
+  }
+
+  @media (max-width: 816px) {
+    align-items: center;
+  }
+
+  @media (max-width: 629px) {
+    justify-content: center;
+  }
+}
