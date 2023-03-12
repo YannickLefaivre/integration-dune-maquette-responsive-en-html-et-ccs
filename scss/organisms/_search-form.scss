@@ -10,7 +10,11 @@
   background-color: $light-color;
   border-radius: unit-converter(12, px, rem);
 
-  @media (max-width: 629px) {
+  @media (max-width: 1440px) {
+    width: 100%;
+  }
+
+  @media (max-width: 1236px) {
     width: 100%;
     padding: 1rem;
     display: flex;
@@ -18,6 +22,5 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: unit-converter(10, px, rem);
-    border-radius: 0px;
   }
 }

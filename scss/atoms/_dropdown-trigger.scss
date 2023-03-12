@@ -7,17 +7,18 @@
   border-radius: unit-converter(5, px, rem);
   gap: unit-converter(5, px, rem);
 
-  @media (max-width: 768px) {
+  @media (max-width: 1236px) {
     display: block;
   }
 
   &__bar {
     position: absolute;
-    left: 6.5px;
+    left: 5.5px;
     display: inline-block;
     width: 20px;
     height: 2px;
     background-color: $light-color;
+    transition: all 0.3s ease-in-out;
 
     &:nth-child(1) {
       top: 7px;
@@ -31,18 +32,18 @@
       bottom: 7px;
     }
 
-    @media (max-width: 629px) {
+    @media (max-width: 1236px) {
       &--dropdown-open:nth-child(1) {
         display: none;
       }
 
       &--dropdown-open:nth-child(2) {
-        top: 14.5px;
+        top: 14px;
         transform: rotate(45deg);
       }
 
       &--dropdown-open:nth-child(3) {
-        bottom: 14.5px;
+        bottom: 14px;
         transform: rotate(135deg);
       }
     }

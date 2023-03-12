@@ -11,10 +11,10 @@
   </head>
   <body class="body">
     <!-- Navbar + Hero -->
-    <div class="main-screen">
+    <div id="main-screen" class="main-screen">
       <!-- Navbar -->
-      <nav class="navbar">
-        <a href="index.html">
+      <nav id="navbar" class="navbar">
+        <a id="home-page-link" class="navbar__home-page-link" href="index.html">
           <svg
             class="navbar__company-logo"
             width="88"
@@ -62,14 +62,14 @@
           </svg>
         </a>
 
-        <div class="dropdown-container dropdown-container--navlink">
-          <button class="button button--sx dropdown-trigger">
+        <div id="dropdown-menu-container" class="dropdown-container dropdown-container--navlink">
+          <button id="dropdown-menu-trigger" class="button button--sx dropdown-trigger">
             <span class="dropdown-trigger__bar"></span>
             <span class="dropdown-trigger__bar"></span>
             <span class="dropdown-trigger__bar"></span>
           </button>
 
-          <ul class="navbar-links-list">
+          <ul id="navbar-links-list" class="navbar-links-list">
             <li class="navbar-links-list__item">
               <a class="navbar__link" href="#">Home</a>
             </li>
@@ -91,7 +91,7 @@
             <li class="navbar-links-list__item">
               <a class="navbar__link" href="#">Contact</a>
             </li>
-            <li class="profil-button-container">
+            <li class="navbar-links-list__item profil-button-container">
               <p class="profil-button-container__user-greeting">
                 <span>Holla</span><br />
                 Ales Nesestril
@@ -112,7 +112,7 @@
       </nav>
 
       <!-- Hero -->
-      <section class="hero">
+      <section id="hero" class="hero">
         <h1>Discover the most engaging places</h1>
 
         <button class="button button--cta button--lg">
@@ -277,7 +277,7 @@
             </div>
           </div>
 
-          <button class="button button--md" type="submit">
+          <button class="button button--md button--search-form" type="submit">
             <svg
               width="24"
               height="24"
@@ -295,7 +295,7 @@
       </section>
     </div>
 
-    <main class="main">
+    <main id="main" class="main">
       <!-- Popular Destinations -->
       <section class="popular-destinations">
         <h2 class="popular-destinations__title">
@@ -1313,6 +1313,7 @@
             href="#"
             >Read more
             <svg
+              class="button__icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -1327,14 +1328,14 @@
         </div>
 
         <img
-          class="about__illustration"
+          class="about-us__illustration"
           src="./images/about/team-photo.jpg"
           alt="Thomas, Julien et Nicolas entrain de regarder une vidéo de chat."
         />
       </section>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <address class="footer__company-infos">
         <svg
           class="footer__company-logo"
@@ -1543,9 +1544,9 @@
             </svg>
 
             <div
-              class="form-field__label-and-input-part form-field--newsletter-subcription-form"
+              class="form-field__label-and-input-part form-field__label-and-input-part--newsletter-subcription-form"
             >
-              <label for="newsletter-email">Your Email</label>
+              <label class="form-field__label" for="newsletter-email">Your Email</label>
               <input
                 class="form-control"
                 type="email"
@@ -1561,6 +1562,7 @@
             type="submit"
           >
             <svg
+              class="button__icon"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -1576,5 +1578,7 @@
         </div>
       </form>
     </footer>
+
+    <script src="./js/dropdown-menu.js"></script>
   </body>
 </html>

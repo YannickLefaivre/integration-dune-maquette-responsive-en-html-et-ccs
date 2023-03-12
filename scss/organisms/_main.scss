@@ -1,5 +1,6 @@
 .main {
   padding-inline: 20%;
+  transition: display 0.3s ease-out;
 
   &--dropdown-menu-open {
     display: none;

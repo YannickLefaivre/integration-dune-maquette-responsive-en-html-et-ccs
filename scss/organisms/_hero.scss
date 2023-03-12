@@ -1,7 +1,9 @@
 .hero {
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.3s ease-out;
 
   &--dropdown-menu-open {
     display: none;
