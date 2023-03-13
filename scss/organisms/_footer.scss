@@ -134,7 +134,13 @@
     }
 
     &__newsletter-subcription-form {
-      width: auto;
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 629px) {
+    &__newsletter-subcription-form {
+      width: 100%;
     }
   }
 }
